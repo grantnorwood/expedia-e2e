@@ -42,7 +42,7 @@ For maximum fun with various versions of Node.js, I recommend [installing NVM](h
 
 It's probably pre-installed on your Mac, or there's a ton of tutorials for installing git on the interwebs, just Google for `install git on mac`.
 
-**Pro tip:** Make life easy for yourself and get use a GUI for Git.  [Sourcetree](https://www.sourcetreeapp.com/) is free and highly useful if you're a more visual person, or if you just want to keep the command line than you have.
+**Pro tip:** Make life easy for yourself and get a GUI for Git.  [Sourcetree](https://www.sourcetreeapp.com/) is free and highly useful if you're a more visual person, or if you just want to keep the command line than you have.
 
 ## Running the Workshop Example
 
