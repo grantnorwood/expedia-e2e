@@ -9,6 +9,10 @@ The End-to-End workshop repo for Expedia's UI Developer Conference.
   - [2) A Code Editor (IDE)](#2-a-code-editor-ide)
   - [3) Git](#3-git)
 - [Running the Workshop Example](#running-the-workshop-example)
+  - [Clone the workshop repo from GitHub](#clone-the-workshop-repo-from-github)
+    - [CLI](#cli)
+    - [Sourcetree](#sourcetree)
+  - [Exercises](#exercises)
 
 <!-- /TOC -->
 
@@ -48,6 +52,25 @@ It's probably pre-installed on your Mac, or there's a ton of tutorials for insta
 
 The code has a sample web server and application, and some starter code for our end-to-end test exercises.
 
-Each exercise has it's own folder, and we'll work through them one by one.  For each, there will be our starter code, as well as the full solution.
+Each exercise is in its own folder, and we'll work through them one by one.  For each, there will be our starter code, as well as the full solution.
 
-[Exercise 1: Run a sample end-to-end test](exercise-1)
+### Clone the workshop repo from GitHub
+
+#### CLI
+From whichever directory where you prefer to create your apps:
+
+```bash
+git clone git@github.com:grantnorwood/expedia-e2e.git
+```
+
+#### Sourcetree
+
+From the _Repository Browser_ or _File_ menu, click _New ..._ and choose to clone a new repo.
+
+The SSH url to the repo is: `git@github.com:grantnorwood/expedia-e2e.git`
+
+### Exercises
+
+_Let's go!_
+
+- [Exercise 1: Run a sample end-to-end test](exercise-1)
