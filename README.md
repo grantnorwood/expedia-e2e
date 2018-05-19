@@ -1,4 +1,5 @@
-# expedia-e2e
+# End-to-End Testing Workshop
+
 The End-to-End workshop repo for Expedia's UI Developer Conference.
 
 <!-- TOC -->
@@ -55,7 +56,8 @@ Each exercise is in its own folder, and we'll work through them one by one.  For
 ### Clone the workshop repo from GitHub
 
 #### CLI
-From whichever directory where you prefer to create your apps:
+
+From your terminal, in whichever directory where you prefer to create your apps:
 
 ```bash
 git clone git@github.com:grantnorwood/expedia-e2e.git
