@@ -10,8 +10,6 @@ The End-to-End workshop repo for Expedia's UI Developer Conference.
   - [3) Git](#3-git)
 - [Running the Workshop Example](#running-the-workshop-example)
   - [Clone the workshop repo from GitHub](#clone-the-workshop-repo-from-github)
-    - [CLI](#cli)
-    - [Sourcetree](#sourcetree)
   - [Exercises](#exercises)
 
 <!-- /TOC -->
