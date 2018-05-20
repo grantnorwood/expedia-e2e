@@ -4,13 +4,13 @@
         "title": "Expedia Conference in London",
         "location": "London, England",
         "description": "A developer conference for the Expedia group of companies, focused on UI && UX.",
-        "status": "planning"
+        "booked": false
     },
     {
         "id": 2,
         "title": "Summer in Brazil",
         "location": "Brazil",
         "description": "A fun vacation so I can practice my non-existant Portuguese.",
-        "status": "booked"
+        "booked": true
     }
 ]

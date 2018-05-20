@@ -1,7 +1,8 @@
 [
     {
         "id": 1,
-        "title": "The Royal Wedding is causing extra transportation delays near the palace.",
-        "description": "Please be prepared to find alternate routes!"
+        "title": "The Royal Wedding is causing extra transportation delays near the palace",
+        "description": "Please be prepared to find alternate routes!",
+        "priority": "critical"
     }
 ]

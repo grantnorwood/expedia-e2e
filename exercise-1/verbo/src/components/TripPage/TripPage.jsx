@@ -1,35 +1,35 @@
 import React, {Component} from 'react';
 import {PageHeader, Panel} from 'react-bootstrap';
 
-import tasks from '../../data/tasks.json';
+import trips from '../../data/trips.json';
 
-class TaskPage extends Component {
+class TripPage extends Component {
     render() {
-        const taskId = this.props.match.params.id;
-        const task = tasks.find(((task) => task.id === parseInt(taskId, 10)));
+        const tripId = this.props.match.params.id;
+        const trip = trips.find(((trip) => trip.id === parseInt(tripId, 10)));
         let bsStyle = 'default';
 
-        if (task.status === 'complete') {
+        if (trip.booked === true) {
             bsStyle = 'success';
-        } else if (task.status === 'overdue') {
-            bsStyle = 'danger';
         }
 
         return (
             <div>
                 <PageHeader>
-                    {task.title}
+                    {trip.title}
                 </PageHeader>
                 <Panel bsStyle={bsStyle}>
                     <Panel.Heading>
-                        <Panel.Title componentClass="h2">Task Details</Panel.Title>
+                        <Panel.Title componentClass="h2">
+                            {trip.title}{trip.booked === true ? <small>&nbsp;&nbsp;You're booked!</small> : ''}
+                        </Panel.Title>
                     </Panel.Heading>
                     <Panel.Body>
                         <p>
-                            <em>Due {task.dueDate}</em>
+                            <em>{trip.location}</em>
                         </p>
                         <p>
-                            {task.description}
+                            {trip.description}
                         </p>
                     </Panel.Body>
                 </Panel>
@@ -38,4 +38,4 @@ class TaskPage extends Component {
     }
 }
 
-export default TaskPage;
+export default TripPage;

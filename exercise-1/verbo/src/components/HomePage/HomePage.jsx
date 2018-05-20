@@ -14,7 +14,8 @@ class HomePage extends Component {
         return (
             <div>
                 <Jumbotron>
-                    <h1>{'Did you remember your toothbrush?'}</h1>
+                    <h2>Did you remember to pack your toothbrush?</h2>
+                    <br />
                     <p>
                         <strong>V<small>e</small>rbo</strong> is a simple app for making sure you're perfectly prepared for your Vaction Rental experience.
                     </p>
@@ -26,22 +27,20 @@ class HomePage extends Component {
                 </Jumbotron>
                 <Grid>
                     <Row>
-                        <Col xs={12} md={6}>
-                            <h2>Coming Up ...</h2>
+                        <Col xs={12} md={4}>
+                            <h2>Trips</h2>
+
+                            <TripsList trips={trips} />
+                        </Col>
+                        <Col xs={12} md={4}>
+                            <h2>Tasks</h2>
 
                             <TasksList tasks={tasks} />
                         </Col>
-                        <Col xs={12} md={6}>
+                        <Col xs={12} md={4}>
                             <h2>Travel Alerts</h2>
 
                             <TravelAlertsList travelAlerts={travelAlerts} />
-                        </Col>
-                    </Row>
-                    <Row>
-                        <Col xs={12} md={12}>
-                            <h2>Your Trips</h2>
-
-                            <TripsList trips={trips} />
                         </Col>
                     </Row>
                 </Grid>
