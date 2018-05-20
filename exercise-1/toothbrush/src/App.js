@@ -1,9 +1,15 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { Grid, Row, Col, Jumbotron, Button } from 'react-bootstrap';
+import PageNavbar from './components/PageNavbar/PageNavbar';
+import HomePage from './components/HomePage/HomePage';
 
 class App extends Component {
-  render() {
+  /**
+   * The original `render()` function from create-react-app.
+   */
+  renderOriginal() {
     return (
       <div className="App">
         <header className="App-header">
@@ -16,6 +22,17 @@ class App extends Component {
       </div>
     );
   }
+  
+  render() {
+    return (
+      <div>
+        <PageNavbar />
+        <div className="container theme-showcase" role="main">
+          <HomePage />
+        </div>
+      </div>
+    );
+  }
 }
-
+          
 export default App;
