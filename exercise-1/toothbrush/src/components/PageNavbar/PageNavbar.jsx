@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import {LinkContainer} from 'react-router-bootstrap';
 import {Navbar, Nav, NavItem, NavDropdown, MenuItem} from 'react-bootstrap';
 
 class PageNavbar extends Component {
@@ -7,21 +8,29 @@ class PageNavbar extends Component {
             <Navbar inverse collapseOnSelect fixedTop>
                 <Navbar.Header>
                     <Navbar.Brand>
-                        <a href="/">VRBO-2-GO</a>
+                        <a href="/"><strong>v<small>e</small>rbo</strong></a>
                     </Navbar.Brand>
                     <Navbar.Toggle />
                 </Navbar.Header>
                 <Navbar.Collapse>
                     <Nav>
                         <NavDropdown eventKey={1} title="Trips" id="nav-dropdown-trips">
-                            <MenuItem eventKey={1.1}>My trips</MenuItem>
+                            <LinkContainer to="/trips">
+                                <MenuItem eventKey={1.1}>My trips</MenuItem>
+                            </LinkContainer>
                             <MenuItem divider />
-                            <MenuItem eventKey={1.2}>Plan a new trip ...</MenuItem>
+                            <LinkContainer to="/trips/new">
+                                <MenuItem eventKey={1.2}>Plan a new trip ...</MenuItem>
+                            </LinkContainer>
                         </NavDropdown>
                         <NavDropdown eventKey={2} title="Tasks" id="nav-dropdown-tasks">
-                            <MenuItem eventKey={2.1}>My tasks</MenuItem>
+                            <LinkContainer to="/tasks">
+                                <MenuItem eventKey={1.1}>My tasks</MenuItem>
+                            </LinkContainer>
                             <MenuItem divider />
-                            <MenuItem eventKey={2.2}>Add a new task ...</MenuItem>
+                            <LinkContainer to="/tasks/new">
+                                <MenuItem eventKey={1.2}>Add a new task ...</MenuItem>
+                            </LinkContainer>
                         </NavDropdown>
                     </Nav>
                     <Nav pullRight>

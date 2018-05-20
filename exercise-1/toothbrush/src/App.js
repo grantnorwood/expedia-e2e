@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import { Grid, Row, Col, Jumbotron, Button } from 'react-bootstrap';
-import PageNavbar from './components/PageNavbar/PageNavbar';
-import HomePage from './components/HomePage/HomePage';
+import {BrowserRouter} from 'react-router-dom';
+import Root from './components/Root/Root';
 
 class App extends Component {
   /**
@@ -25,12 +24,9 @@ class App extends Component {
   
   render() {
     return (
-      <div>
-        <PageNavbar />
-        <div className="container theme-showcase" role="main">
-          <HomePage />
-        </div>
-      </div>
+      <BrowserRouter>
+        <Root />
+      </BrowserRouter>
     );
   }
 }
