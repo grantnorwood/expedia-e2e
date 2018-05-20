@@ -1,17 +1,16 @@
 import React, {Component} from 'react';
 import {PageHeader} from 'react-bootstrap';
 
-class TasksPage extends Component {
+class NewTripPage extends Component {
     render() {
         return (
             <div>
                 <PageHeader>
-                    My Tasks
+                    Plan a new trip
                 </PageHeader>
-                
             </div>
         );
     }
 }
 
-export default TasksPage;
+export default NewTripPage;

@@ -1,10 +1,11 @@
 {
-  "name": "toothbrush",
+  "name": "verbo",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "ajv": "^6.5.0",
     "bootstrap": "^3.3.7",
+    "prop-types": "^15.6.1",
     "react": "^16.3.2",
     "react-bootstrap": "^0.32.1",
     "react-dom": "^16.3.2",

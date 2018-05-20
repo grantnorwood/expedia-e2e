@@ -1,6 +1,9 @@
 import React, {Component} from 'react';
+import {Badge, MenuItem, Nav, NavDropdown, NavItem, Navbar} from 'react-bootstrap';
 import {LinkContainer} from 'react-router-bootstrap';
-import {Navbar, Nav, NavItem, NavDropdown, MenuItem} from 'react-bootstrap';
+import {Link} from "react-router-dom";
+
+import travelAlerts from '../../data/travelAlerts.json';
 
 class PageNavbar extends Component {
     render() {
@@ -8,7 +11,7 @@ class PageNavbar extends Component {
             <Navbar inverse collapseOnSelect fixedTop>
                 <Navbar.Header>
                     <Navbar.Brand>
-                        <a href="/"><strong>v<small>e</small>rbo</strong></a>
+                        <Link to="/"><strong>V<small>e</small>rbo</strong></Link>
                     </Navbar.Brand>
                     <Navbar.Toggle />
                 </Navbar.Header>
@@ -18,25 +21,30 @@ class PageNavbar extends Component {
                             <LinkContainer to="/trips">
                                 <MenuItem eventKey={1.1}>My trips</MenuItem>
                             </LinkContainer>
-                            <MenuItem divider />
                             <LinkContainer to="/trips/new">
                                 <MenuItem eventKey={1.2}>Plan a new trip ...</MenuItem>
                             </LinkContainer>
                         </NavDropdown>
                         <NavDropdown eventKey={2} title="Tasks" id="nav-dropdown-tasks">
                             <LinkContainer to="/tasks">
-                                <MenuItem eventKey={1.1}>My tasks</MenuItem>
+                                <MenuItem eventKey={2.1}>My tasks</MenuItem>
                             </LinkContainer>
-                            <MenuItem divider />
                             <LinkContainer to="/tasks/new">
-                                <MenuItem eventKey={1.2}>Add a new task ...</MenuItem>
+                                <MenuItem eventKey={2.2}>Add a new task ...</MenuItem>
                             </LinkContainer>
                         </NavDropdown>
+                        <LinkContainer to="/travel-alerts">
+                            <NavItem eventKey={3}>
+                                Travel Alerts <Badge>{travelAlerts.length}</Badge>
+                            </NavItem>
+                        </LinkContainer>
                     </Nav>
                     <Nav pullRight>
-                        <NavItem eventKey={1} href="/profile">
-                            My Profile
-                        </NavItem>
+                        <LinkContainer to="/profile">
+                            <NavItem eventKey={4}>
+                                My Profile
+                            </NavItem>
+                        </LinkContainer>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
