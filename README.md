@@ -49,7 +49,7 @@ It's probably pre-installed on your Mac, or there's a ton of tutorials for insta
 
 ## Running the Workshop Example
 
-The code has a sample web server and application, and some starter code for our end-to-end test exercises.
+The code has a sample web server and application, and some starter code for our end-to-end test exercises.  It was created using Facebook's [Create React App](https://github.com/facebook/create-react-app).
 
 Each exercise is in its own folder, and we'll work through them one by one.  For each, there will be our starter code, as well as the full solution.
 
@@ -73,4 +73,4 @@ The SSH url to the repo is: `git@github.com:grantnorwood/expedia-e2e.git`
 
 _Let's go!_
 
-- [Exercise 1: Run a sample end-to-end test](exercise-1)
+- [Exercise 1: Setup the example application](exercise-1)
