@@ -14,13 +14,13 @@ It was created using Facebook's [Create React App](https://github.com/facebook/c
 
 In each exercise, there is a `verbo` directory where we will run our app.
 
-1. In your terminal, `cd` to the `exercise-1/verbo` directory
+1. In your terminal, `cd` to the `exercise-1/verbo` directory.
 
 ```bash
 cd exercise-1/verbo
 ```
 
-2. Install the dependencies
+2. Install the dependencies.
 
 ```bash
 npm i
@@ -28,7 +28,7 @@ npm i
 
 **Note:** `npm i` is a shorter alias for `npm install` _(two carpal tunnel surgeries and you'd want to type less, too.)_
 
-3. Start the app
+3. Start the app.
 
 ```bash
 npm start
