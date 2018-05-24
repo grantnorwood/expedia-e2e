@@ -17,9 +17,9 @@ The End-to-End workshop repo for Expedia's UI Developer Conference.
 
 ## Required pre-work
 
-**If you want to be ahead of the game, get your environment setup before you arrive at the workshop.**
+**If you want to be ahead of the game, get your environment setup before you arrive at the workshop!**  You can do this by completing each section of the instructions in this main README file.
 
-We will spend some time reviewing the steps to [setting up your development environment](#setup-your-environment), but we won't have time to download & install everything you'll need.  Please come prepared!
+We will spend some time reviewing the steps to [setting up your development environment](#setup-your-environment) and [cloning the workshop repo from GitHub](#clone-the-workshop-repo-from-github), but we won't have time to download & install everything you'll need.  Please come prepared!
 
 ## Setting up your environment
 
@@ -69,8 +69,11 @@ From the _Repository Browser_ or _File_ menu, click _New ..._ and choose to clon
 
 The SSH url to the repo is: `git@github.com:grantnorwood/expedia-e2e.git`
 
+✅ _**Congratulations, your pre-work is done!**  But of course you are free to look ahead to the exercises we'll be working on ... you'll save yourself some time if you get the example application in [exercise-1](exercise-1) up and running before the workshop begins._
+
 ### Exercises
 
 _Let's go!_
 
 - [Exercise 1: Setup the example application](exercise-1)
+- [Exercise 2: Install WebDriver.io and write your first test](exercise-2)
