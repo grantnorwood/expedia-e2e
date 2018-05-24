@@ -15,9 +15,25 @@ It was created using Facebook's [Create React App](https://github.com/facebook/c
 In each exercise, there is a `verbo` directory where we will run our app.
 
 1. In your terminal, `cd` to the `exercise-1/verbo` directory
-2. Install dependencies with `npm i` _(a shorter alias for `npm install`)_  
-  _Two carpal tunnel surgeries and you'd want to type less, too._
-3. Start the app with `npm start`
+
+```bash
+cd exercise-1/verbo
+```
+
+2. Install the dependencies
+
+```bash
+npm i
+```
+
+**Note:** `npm i` is a shorter alias for `npm install` _(two carpal tunnel surgeries and you'd want to type less, too.)_
+
+3. Start the app
+
+```bash
+npm start
+```
+
 4. Open the app in your browser at http://localhost:3000
 
 _You should now have a working web application ready for testing in the next exercise!_
