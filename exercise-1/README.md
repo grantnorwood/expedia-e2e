@@ -1,11 +1,10 @@
 # Exercise 1: Run a sample end-to-end test
 
-For our first exercise, we want to make sure we can run the future exercises without problems.
+For our first exercise, we want to make sure we can run the subsequent exercises without problems.
 
 ## Our Goal
 
-- Our webserver should serve the example website
-- A simple e2e test executes without issue
+- Our webserver should serve the example website (VeRBO)
 
 ## Instructions
 
