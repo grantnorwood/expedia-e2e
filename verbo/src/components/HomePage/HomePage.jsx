@@ -14,7 +14,7 @@ class HomePage extends Component {
         return (
             <div>
                 <Jumbotron>
-                    <h2>Did you remember to pack your toothbrush?</h2>
+                    <h1>Did you remember to pack your toothbrush?</h1>
                     <br />
                     <p>
                         <strong>V<small>e</small>rbo</strong> is a simple app for making sure you're perfectly prepared for your Vaction Rental experience.

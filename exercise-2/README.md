@@ -159,18 +159,38 @@ var options = {
 // ...
 ```
 
-3. Log out the url, in addition to the title:
+3. Add another line to log the url to the console:
 
 ```js
-// ...
+// getTitle() ...
 .getUrl().then(function (url) { // gets the page url, and executes a callback fn in .then()
     console.log('Url was: ' + url);
 })
 // ...
 ```
 
-4. Run the test again, and this time we should see it open up Chrome instead.
+1. And for fun, let's use a standard CSS selector syntax to print out the page's `<h1 />` text:
+
+```js
+// getTitle() ...
+// getUrl() ...
+.getText('h1').then(function (text) { // gets the page's h1 element text
+    console.log('h1 was: ' + text);
+})
+// ...
+```
+
+5. Run the test again, and this time we should see it open up Chrome instead, as well as some new lines in the console output.
 
 ```bash
 node example.spec.js
+```
+
+And here is the output you should expect:
+
+```bash
+$ node example.spec.js 
+Title was: Verbo - Simple travel planning
+Url was: http://localhost:3000/
+h1 was: Did you remember to pack your toothbrush?
 ```
