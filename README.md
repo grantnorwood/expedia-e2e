@@ -6,9 +6,10 @@ The End-to-End workshop repo for Expedia's UI Developer Conference.
 
 - [Required pre-work](#required-pre-work)
 - [Setting up your environment](#setting-up-your-environment)
-  - [1) Node.js](#1-nodejs)
-  - [2) A Code Editor (IDE)](#2-a-code-editor-ide)
-  - [3) Git](#3-git)
+  - [Node.js](#nodejs)
+  - [A Code Editor (IDE)](#a-code-editor-ide)
+  - [Browsers](#browsers)
+  - [Git](#git)
 - [Running the Workshop Example](#running-the-workshop-example)
   - [Clone the workshop repo from GitHub](#clone-the-workshop-repo-from-github)
   - [Exercises](#exercises)
@@ -25,7 +26,7 @@ We will spend some time reviewing the steps to [setting up your development envi
 
 _Here's what you'll need to get started ..._
 
-### 1) Node.js
+### Node.js
 
 I'm using **v8.9.4**, but any of the "Latest LTS: Carbon" releases should be fine.
 
@@ -37,11 +38,15 @@ node --version
 
 For maximum fun with various versions of Node.js, I recommend [installing NVM](https://github.com/creationix/nvm) for managing your installed/active versions of Node.
 
-### 2) A Code Editor (IDE)
+### A Code Editor (IDE)
 
 [Visual Studio Code](https://code.visualstudio.com/) is popular these days.  Lots of folks prefer [Atom](https://ide.atom.io/).  And [Sublime Text](https://www.sublimetext.com/) is awesome, too.  You'll just want a nice code editor to do syntax highlighting and other handy code stuff for you.
 
-### 3) Git
+### Browsers
+
+We may be using both Chrome and Firefox, so please have both installed.
+
+### Git
 
 It's probably pre-installed on your Mac, or there's a ton of tutorials for installing git on the interwebs, just Google for `install git on mac`.
 
@@ -52,6 +57,8 @@ It's probably pre-installed on your Mac, or there's a ton of tutorials for insta
 The code has a sample web server and application, and some starter code for our end-to-end test exercises.  It was created using Facebook's [Create React App](https://github.com/facebook/create-react-app).
 
 Each exercise is in its own folder, and we'll work through them one by one.  For each, there will be our starter code, as well as the full solution.
+
+The example app called "Verbo" exists in the `/verbo` directory.  We'll run our e2e tests against this app running on http://localhost:3000.
 
 ### Clone the workshop repo from GitHub
 
@@ -71,7 +78,7 @@ The SSH url to the repo is: `git@github.com:grantnorwood/expedia-e2e.git`
 
 ✅ _**Congratulations, your pre-work is done!**  But of course you are free to look ahead to the exercises we'll be working on ... you'll save yourself some time if you get the example application in [exercise-1](exercise-1) up and running before the workshop begins._
 
-### Exercises
+## Exercises
 
 _Let's go!_
 
