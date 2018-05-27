@@ -12,7 +12,7 @@ var options = {
 webdriverio
     .remote(options) // returns the client object
     .init() // initializes the browser environment
-    .url('http://www.google.com') // navigates to a url
+    .url('http://localhost:3000/') // navigates to a url
     .getTitle().then(function (title) { // gets the page title, and executes a callback fn in .then()
         console.log('Title was: ' + title);
     })

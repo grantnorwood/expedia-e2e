@@ -138,7 +138,7 @@ _(**to-do:** explain each method on `webdriverio` object in example code)_
 
 When that first example ran, you should've seen a Firefox browser window open in the background _(make sure your other app windows aren't full-screen)_, load up Google, and get the title of the window.
 
-This time, let's change our configuration object to specify Chrome as our browser for automated testing.
+This time, let's change our configuration object to specify Chrome as our browser for automated testing, and also point our script at our running example application on [http://localhost:3000/](http://localhost:3000/).
 
 1. Open up `example.spec.js` and change the `options.desiredCapabilities.browserName` to `'chrome'`:
 
@@ -148,6 +148,14 @@ var options = {
         browserName: 'chrome'
     }
 };
+```
+
+2. Change the url to our local application:
+
+```js
+// ...
+.url('http://localhost:3000/')
+// ...
 ```
 
 Run the test again, and this time we should see it open up Chrome instead.
