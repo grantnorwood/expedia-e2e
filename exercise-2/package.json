@@ -1,0 +1,13 @@
+{
+  "name": "exercise-2",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test:browser": "node tests/browser/example.spec.js"
+  },
+  "author": "Grant Norwood",
+  "license": "ISC",
+  "devDependencies": {
+    "webdriverio": "^4.12.0"
+  }
+}
