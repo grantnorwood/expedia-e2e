@@ -28,6 +28,7 @@ _Our e2e tests using WebDriver are typically installed and run in the same NPM p
 1. [Install WebDriver.io via NPM](#install-webdriverio-via-npm)
 1. [Create your first test file](#create-your-first-test-file)
 1. [Run the test](#run-the-test)
+2. [Specifying a different browser and URL](#specifying-a-different-browser-and-url)
 
 <!-- /TOC -->
 
@@ -134,7 +135,7 @@ _Nice job, you've just created your first automated test!_
 
 _(**to-do:** explain each method on `webdriverio` object in example code)_
 
-### Specifying a different browser
+### Specifying a different browser and URL
 
 When that first example ran, you should've seen a Firefox browser window open in the background _(make sure your other app windows aren't full-screen)_, load up Google, and get the title of the window.
 
@@ -158,7 +159,17 @@ var options = {
 // ...
 ```
 
-Run the test again, and this time we should see it open up Chrome instead.
+3. Log out the url, in addition to the title:
+
+```js
+// ...
+.getUrl().then(function (url) { // gets the page url, and executes a callback fn in .then()
+    console.log('Url was: ' + url);
+})
+// ...
+```
+
+4. Run the test again, and this time we should see it open up Chrome instead.
 
 ```bash
 node example.spec.js

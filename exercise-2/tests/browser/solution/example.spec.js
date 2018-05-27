@@ -16,6 +16,9 @@ webdriverio
     .getTitle().then(function (title) { // gets the page title, and executes a callback fn in .then()
         console.log('Title was: ' + title);
     })
+    .getUrl().then(function (url) { // gets the page url, and executes a callback fn in .then()
+        console.log('Url was: ' + url);
+    })
     .end() // required to explicitly end the test.
     .catch(function (err) { // catches any exceptions thrown
         console.log(err);
