@@ -99,8 +99,6 @@ describe('Example using Node\'s assertion library', function () {
         var expectedPageTitle = "Verbo - Simple travel planning";
 
         it('should be ' + expectedPageTitle, function () {
-            /* Notice we're removing the returned Promise, and breaking each `.then()` into its own line. */
-
             // Navigate to the home page and test the page title
             browser.url('/');
 
@@ -155,8 +153,6 @@ describe('Example using Chai\'s assertion library', function () {
         var expectedPageTitle = "Verbo - Simple travel planning";
 
         it('should be ' + expectedPageTitle, function () {
-            /* Notice we're removing the returned Promise, and breaking each `.then()` into its own line. */
-
             // Navigate to the home page and test the page title
             browser.url('/');
 

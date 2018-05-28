@@ -184,42 +184,11 @@ Note that none of the tests are passing, because we haven't really created our n
 
 ### First passing test
 
-Let's copy the solution code from [Exercise 2: Install WebDriver.io and write your first test](../exercise-2/tests/browser/solution/example.spec.js) to make our previous test spec runnable by `wdio`.
+Since `wdio` does much of the setup and teardown of tests, we can delete the `require()` and `options` lines, as well as calls to `.remote()`, `.init()`, and `.end()`.  Additionally, the global WebDriver client is a variable called `browser`, so we'll update that, too.
 
-1. Create a new `example.spec.js` with the following:
+And because the base url is defined in our configuration file, we can simply point to the root path.  So we'll go ahead and delete those obsolete lines, change `webdriverio` to `browser`, and update the `url`.  You'll also see that we've wrapped the `browser` code in Mocha's `describe()` and `it()` functions so that we see passing tests:
 
-```js
-var webdriverio = require('webdriverio');
-var options = {
-    desiredCapabilities: {
-        browserName: 'chrome'
-    }
-};
-
-webdriverio
-    .remote(options) // returns the client object
-    .init() // initializes the browser environment
-    .url('http://localhost:3000/') // navigates to a url
-    .getTitle().then(function (title) { // gets the page title, and executes a callback fn in .then()
-        console.log('Title was: ' + title);
-    })
-    .getUrl().then(function (url) { // gets the page url
-        console.log('Url was: ' + url);
-    })
-    .getText('h1').then(function (text) { // gets the page's h1 element text
-        console.log('h1 was: ' + text);
-    })
-    .end() // required to explicitly end the test.
-    .catch(function (err) { // catches any exceptions thrown
-        console.log(err);
-    });
-```
-
-2. Since `wdio` does much of the setup and teardown of tests, we can delete the `require()` and `options` lines, as well as calls to `.remote()`, `.init()`, and `.end()`.  Additionally, the global WebDriver client is a variable called `browser`, so we'll update that, too.
-
-And because the base url is defined in our configuration file, we can simply point to the root path.
-
-Go ahead and delete those lines, change `webdriverio` to `browser`, and update the `url`:
+1. Create a new `example.spec.js` with the following _(based on the previous exercise)_:
 
 ```js
 /**
@@ -252,7 +221,11 @@ describe('Example', function () {
 });
 ```
 
-You should see something like this, with 1 test passing:
+2. Run the test again, and you should see something like this, with 1 test passing:
+
+```bash
+./node_modules/.bin/wdio
+```
 
 ![1 test passing](https://content.screencast.com/users/gnorwood_homeaway/folders/Snagit/media/7d88adaa-80a3-4d22-b349-f40f90613d42/2018-05-27_22-54-31.png)
 
