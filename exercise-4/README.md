@@ -139,6 +139,8 @@ You should see the example spec run with 1 passing test, and the page title prin
 
 Chai enables much more powerful assertions via multiple styles, and for this workshop we'll use `expect()`.
 
+_**Side note:** Chai's `should()` syntax has some gotchas, as explained in the [official docs](http://www.chaijs.com/guide/styles/#should).  This is why we'll use `expect()`._
+
 1. Install `chai` as a `devDependency`:
 
 ```bash
