@@ -6,7 +6,6 @@ var assert = require('assert');
 
 describe('Example', function () {
     describe('page title', function () {
-
         var expectedPageTitle = "Verbo - Simple travel planning";
 
         it('should be ' + expectedPageTitle, function () {
@@ -24,6 +23,5 @@ describe('Example', function () {
                     // assert.notEqual(title, expectedPageTitle);
                 });
         });
-
     });
 });

@@ -9,8 +9,10 @@ When we originally ran the `wdio` command to generate our config file, we chose 
 - [Success criteria](#success-criteria)
 - [Instructions](#instructions)
   - [Switch to sync mode](#switch-to-sync-mode)
+  - [Enable `sync` mode](#enable-sync-mode)
   - [Init the exercise](#init-the-exercise)
-  - [Let's make our code look more synchronous](#lets-make-our-code-look-more-synchronous)
+  - [Use Mocha](#use-mocha)
+  - [Adding `chai`](#adding-chai)
 - [What we learned](#what-we-learned)
 - [Up next](#up-next)
 
@@ -176,6 +178,47 @@ describe('Example using Chai\'s assertion library', function () {
 ```
 
 The above simply changes from the Node.js `assert` module to using Chai's, which is much more powerful.
+
+### Expect the homepage's h1 text to be correct
+
+For extra practice, let's add another inner `describe()` block within the outermost `describe()` block ... you'll then have two "sub-groups" of tests within this example group:
+
+- One for `describe('page title')`
+- Another for `describe('page h1')`
+
+```js
+describe('page h1', function () {
+    var expectedText = "Did you remember to pack your toothbrush?";
+
+    it('should be ' + expectedText, function () {
+        // Navigate to the home page and test the page title
+        browser.url('/');
+
+        // Get the page title
+        var h1Text = browser.getText('h1');
+
+        // Log the page title (just for fun)
+        console.log('\n🤖 (Chai) The h1 text is: ' + h1Text);
+
+        // Assert the page title is what we expect it to be
+        expect(h1Text).to.equal(expectedText);
+
+        // HINT: Want to see what a failure looks like?  
+        //       Uncomment the line below to try the `.not.to.equal()` syntax!
+        // expect(h1Text).not.to.equal(expectedText);
+
+        // HINT: You can also change the page title in `verbo/src/components/HomePage/HomePage.jsx` to simulate an actual bug in the code, which should also cause your test to fail.
+    });
+});
+```
+
+Run your test script again, and you'll see another passing test!
+
+```bash
+npm test
+```
+
+![3 passing tests](https://content.screencast.com/users/gnorwood_homeaway/folders/Snagit/media/b2be255c-9dc5-4cae-aeac-32ba61c978a4/2018-05-28_02-53-52.png)
 
 ✅ You've made a lot of progress, great job!
 
