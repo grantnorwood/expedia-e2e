@@ -70,7 +70,7 @@ selenium-standalone start
 
 You should see some output as the server starts, including a line telling you which url & port the server is using:
 
-![Selenium standalone server & port](https://content.screencast.com/users/gnorwood_homeaway/folders/Snagit/media/9a95f619-0c1c-41a7-b445-81be3492e7f8/2018-05-27_12-58-55.png)
+![Selenium standalone server & port](https://content.screencast.com/users/gnorwood_homeaway/folders/Snagit/media/2fd72177-4c14-453e-bfc7-c0c7b6f5ca8a/2018-05-28_01-04-39.png)
 
 Visit your selenium server at [http://localhost:4444/](http://localhost:4444/) to make sure it's working.
 
