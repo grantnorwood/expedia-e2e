@@ -1,0 +1,16 @@
+{
+  "name": "exercise-2",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test:browser": "node tests/browser/example.spec.js"
+  },
+  "author": "Grant Norwood",
+  "license": "ISC",
+  "devDependencies": {
+    "wdio-dot-reporter": "0.0.9",
+    "wdio-mocha-framework": "^0.5.13",
+    "wdio-selenium-standalone-service": "0.0.10",
+    "webdriverio": "^4.12.0"
+  }
+}

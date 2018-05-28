@@ -4,6 +4,24 @@ Now, let's install WebDriver.io and the [standalone Selenium server]((https://ww
 
 These instructions are based heavily on the official [WebDriver.io docs](http://webdriver.io/guide.html), which are really well done.  Get used to using them!
 
+**Overview**
+
+<!-- TOC -->
+
+- [Success criteria](#success-criteria)
+- [Instructions](#instructions)
+  - [Start the app server](#start-the-app-server)
+  - [Install the selenium-standalone server](#install-the-selenium-standalone-server)
+  - [Install WebDriver.io via NPM](#install-webdriverio-via-npm)
+  - [Create your first test file](#create-your-first-test-file)
+  - [Run the test](#run-the-test)
+  - [Let's get fancier](#lets-get-fancier)
+- [What we learned](#what-we-learned)
+
+<!-- /TOC -->
+
+---
+
 ## Success Criteria
 
 1. The necessary Selenium and WebDriver tools are installed.
@@ -13,24 +31,11 @@ These instructions are based heavily on the official [WebDriver.io docs](http://
 
 In order to run our first test, we'll need to start our example app server, install WebDriver.io as a dependency for our e2e test code, and install a standalone Selenium server. _(Luckily, we'll see an [npm package](https://www.npmjs.com/package/selenium-standalone) which makes this quite simple!)_
 
-So expect to have a few terminal windows (or tabs) open.
+> So expect to have a few terminal windows (or tabs) open 🤓
 
 Notice that in the `exercise-2` folder, I've already scaffolded out an NPM project to save some time, along with an empty `src` folder to give you a better idea of how this might work within your own applications.  
 
 _Our e2e tests using WebDriver are typically installed and run in the same NPM project as our app when out in the wild._
-
-### Overview
-
-<!-- TOC -->
-
-1. [Start the app server](#start-the-app-server)
-1. [Install the selenium-standalone server](#install-the-selenium-standalone-server)
-1. [Install WebDriver.io via NPM](#install-webdriverio-via-npm)
-1. [Create your first test file](#create-your-first-test-file)
-1. [Run the test](#run-the-test)
-2. [Specifying a different browser and URL](#specifying-a-different-browser-and-url)
-
-<!-- /TOC -->
 
 ### Start the app server
 
@@ -135,7 +140,7 @@ _Nice job, you've just created your first automated test!_
 
 _(**to-do:** explain each method on `webdriverio` object in example code)_
 
-### Specifying a different browser and URL
+### Let's get fancier
 
 When that first example ran, you should've seen a Firefox browser window open in the background _(make sure your other app windows aren't full-screen)_, load up Google, and get the title of the window.
 
@@ -189,8 +194,14 @@ node example.spec.js
 And here is the output you should expect:
 
 ```bash
-$ node example.spec.js 
+$ node example.spec.js
 Title was: Verbo - Simple travel planning
 Url was: http://localhost:3000/
 h1 was: Did you remember to pack your toothbrush?
 ```
+
+## What we learned
+
+- How to install and start a standalone Selenium server _(and we'll learn more in the next exercise about a more advanced method of running our tests!)_
+- How to install the `webdriverio` module and dependencies.
+- We wrote our first test!
