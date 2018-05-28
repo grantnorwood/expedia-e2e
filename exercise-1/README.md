@@ -49,6 +49,10 @@ npm start
 
 _(**to-do:** explain special npm "run" commands)_
 
+You'll see the app spin up and print some info to the console:
+
+![npm start](https://content.screencast.com/users/gnorwood_homeaway/folders/Snagit/media/b9488461-16c8-43df-a403-a80ebce26b15/2018-05-27_23-00-09.png)
+
 Open the app in your browser at [http://localhost:3000](http://localhost:3000). _You should now have a working web application to test against with the next exercises!_
 
 ![Verbo app running on localhost port 3000](https://content.screencast.com/users/gnorwood_homeaway/folders/Snagit/media/956c3a3f-5baf-428f-abd1-6ca2f6e2a345/2018-05-27_16-02-55.png)
