@@ -11,7 +11,6 @@ When we originally ran the `wdio` command to generate our config file, we chose 
   - [Switch to sync mode](#switch-to-sync-mode)
   - [Init the exercise](#init-the-exercise)
   - [Let's make our code look more synchronous](#lets-make-our-code-look-more-synchronous)
-  - [Launch `wdio` with an `npm` script](#launch-wdio-with-an-npm-script)
 - [What we learned](#what-we-learned)
 - [Up next](#up-next)
 
@@ -22,8 +21,7 @@ When we originally ran the `wdio` command to generate our config file, we chose 
 ## Success Criteria
 
 1. Learn how to use mocha to group our tests appropriately.
-2. Learn the main difference between `sync` modes
-3. Add a convenient `npm` script
+1. Learn the main difference between `sync` modes
 
 ## Instructions
 
@@ -129,34 +127,12 @@ You should see the example spec run with 1 passing test, and the page title prin
 
 ![1 passing test with sync mode on](https://content.screencast.com/users/gnorwood_homeaway/folders/Snagit/media/e48dd535-33ff-4fb2-8676-9e37c1aa2b00/2018-05-28_00-08-31.png)
 
-### Launch `wdio` with an `npm` script
-
-Let's add an `npm run test:browser` script so we can avoid calling `wdio` directly, and make it easier for other developers and build tools to run your e2e test suite.
-
-You can call your script just about anything, but at HomeAway, we typically have a pattern where a variety of "sub-scripts" use the colons to group similar scripts _(`:`)_.
-
-Also, `npm run test` is more typically used to run unit tests.
-
-1. Open `package.json`
-2. Notice the new `scripts` field:
-
-```js
-"scripts": {
-    "test:browser": "wdio"
-},
-```
-
-3. Now, simply run `npm run test:browser` from now on to run your suite of tests.  Notice the `> wdio` in the output:
-
-![Running npm run test:browser](https://content.screencast.com/users/gnorwood_homeaway/folders/Snagit/media/6e5f3aec-80d0-4112-8e52-1c41bdad2070/2018-05-28_00-38-17.png)
-
-**Pro tip:** Another benefit to using `npm` scripts is that they already search `node_modules/.bin` for local executables, so we can simple execute `wdio` without the rest of the path.
+✅ This `sync` mode stuff is going to make running all of your future tests much easier!
 
 ## What we learned
 
 1. We learned how to use mocha syntax to group our tests with `describe()` and `it()` functions.
 2. We learned that setting `sync` mode to `true` allows us to write more simple, synchronous-looking code in our tests, and let WebDriver.io extract away the inherently async behavior of testing with web browsers.
-3. We created an `npm run test:browser` script that will make running `wdio` easier in the future.
 
 ## Up next
 

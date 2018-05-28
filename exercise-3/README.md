@@ -8,12 +8,14 @@ There are two methods of running your WebDriver.io tests, and they are well docu
 
 - [Success Criteria](#success-criteria)
 - [Instructions](#instructions)
+  - [Init the exercise](#init-the-exercise)
   - [Using the `wdio` command](#using-the-wdio-command)
   - [Create a configuration file](#create-a-configuration-file)
   - [Customizing the configuration](#customizing-the-configuration)
   - [Create a test spec](#create-a-test-spec)
   - [Running `wdio`](#running-wdio)
   - [First passing test](#first-passing-test)
+  - [Launch `wdio` with an `npm` script](#launch-wdio-with-an-npm-script)
 - [What we learned](#what-we-learned)
 - [Up next](#up-next)
 
@@ -24,7 +26,8 @@ There are two methods of running your WebDriver.io tests, and they are well docu
 ## Success Criteria
 
 1. Understand the difference between the standalone mode and using the WDIO test runner.
-2. Setup your test runner to use `wdio`, the preferred way to run your e2e tests.
+1. Setup your test runner to use `wdio`, the preferred way to run your e2e tests.
+1. Add a convenient `npm` script
 
 ## Instructions
 
@@ -248,13 +251,37 @@ You can also try intentionally causing a test to fail to see what that looks lik
 
 ![1 test passing, 1 test failure](https://content.screencast.com/users/gnorwood_homeaway/folders/Snagit/media/1cfb91f4-0ead-41f2-8212-173f1ec21d96/2018-05-27_22-53-30.png)
 
+### Launch `wdio` with an `npm` script
+
+Let's add an `npm run test:browser` script so we can avoid calling `wdio` directly, and make it easier for other developers and build tools to run your e2e test suite.
+
+You can call your script just about anything, but at HomeAway, we typically have a pattern where a variety of "sub-scripts" use the colons to group similar scripts _(`:`)_.
+
+Also, `npm run test` is more typically used to run unit tests.
+
+1. Open `package.json`
+2. Notice the new `scripts` field:
+
+```js
+"scripts": {
+    "test:browser": "wdio"
+},
+```
+
+3. Now, simply run `npm run test:browser` from now on to run your suite of tests.  Notice the `> wdio` in the output:
+
+![Running npm run test:browser](https://content.screencast.com/users/gnorwood_homeaway/folders/Snagit/media/6e5f3aec-80d0-4112-8e52-1c41bdad2070/2018-05-28_00-38-17.png)
+
+**Pro tip:** Another benefit to using `npm` scripts is that they already search `node_modules/.bin` for local executables, so we can simple execute `wdio` without the rest of the path.
+
 ✅ **Congratulations!** With the `wdio` test runner setup, you're getting closer to a fully configured environment for running e2e tests.
 
 ## What we learned
 
 1. You should now understand the difference between the standalone mode and using the WDIO test runner, and why WDIO is preferred.
-2. You can now run `wdio` tests, using the configuration file you created.
-3. You wrote your first simple test spec!
+1. You can now run `wdio` tests, using the configuration file you created.
+1. You wrote your first simple test spec!
+1. We created an `npm run test:browser` script that will make running `wdio` easier in the future.
 
 ## Up next
 

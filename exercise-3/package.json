@@ -4,6 +4,9 @@
   "description": "",
   "author": "Grant Norwood",
   "license": "ISC",
+  "scripts": {
+    "test:browser": "wdio"
+  },
   "devDependencies": {
     "wdio-dot-reporter": "0.0.9",
     "wdio-mocha-framework": "^0.5.13",
