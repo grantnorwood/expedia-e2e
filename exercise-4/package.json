@@ -5,9 +5,10 @@
   "author": "Grant Norwood",
   "license": "ISC",
   "scripts": {
-    "test:browser": "wdio"
+    "test": "wdio"
   },
   "devDependencies": {
+    "chai": "^4.1.2",
     "wdio-dot-reporter": "0.0.9",
     "wdio-mocha-framework": "^0.5.13",
     "wdio-selenium-standalone-service": "0.0.10",

@@ -1,4 +1,4 @@
-# Exercise 4: Adding `mocha`
+# Exercise 4: Adding `mocha` and `chai`
 
 When we originally ran the `wdio` command to generate our config file, we chose `mocha` as the framework for organizing our tests.
 
@@ -20,8 +20,9 @@ When we originally ran the `wdio` command to generate our config file, we chose 
 
 ## Success criteria
 
-1. Learn how to use mocha to group our tests appropriately.
 1. Learn the main difference between `sync` modes
+1. Learn how to use mocha to group our tests appropriately.
+1. Install `chai` and learn to use `expect()` for assertions.
 
 ## Instructions
 
@@ -53,6 +54,18 @@ describe('webdriver.io page', function() {
 
 > **Important:** "All commands now block the execution of the test process until they’ve resolved. No then calls have to be done anymore, we can just assign the direct response of the Selenium server to a variable."
 
+### Enable `sync` mode
+
+_Because it makes everything appear cleaner and more readable!_
+
+1. In `wdio.conf.js`, change `sync` back to `true`:
+
+```js
+// ...
+sync: true,
+// ...
+```
+
 ### Init the exercise
 
 1. Change to the correct directory
@@ -67,19 +80,11 @@ cd tests/browser/exercise-4
 npm i
 ```
 
-### Let's make our code look more synchronous
+### Use Mocha
 
-_Because it makes everything appear cleaner and more readable!_
+Mocha is already included in your project when you installed `wdio`.  But we do need to update our code to use it.
 
-1. In `wdio.conf.js`, change `sync` back to `true`:
-
-```js
-// ...
-sync: true,
-// ...
-```
-
-2. We need to change the code from returning a promise _(async style)_, to a handful of separate statements that will execute one after another _(sync style)_.
+1. We need to change the code from returning a promise _(async style)_, to a handful of separate statements that will execute one after another _(sync style)_.
 
 Open the `exercise-4/tests/browser/example.spec.js` test file, and replace it with the following code:
 
@@ -89,7 +94,7 @@ Open the `exercise-4/tests/browser/example.spec.js` test file, and replace it wi
  */
 var assert = require('assert');
 
-describe('Example', function () {
+describe('Example using Node\'s assertion library', function () {
     describe('page title', function () {
         var expectedPageTitle = "Verbo - Simple travel planning";
 
@@ -103,19 +108,22 @@ describe('Example', function () {
             var pageTitle = browser.getTitle();
 
             // Log the page title (just for fun)
-            console.log('🤖 The page title is: "' + pageTitle + '"');
+            console.log('\n🤖 The page title is: ' + pageTitle);
 
             // Assert the page title is what we expect it to be
             assert.equal(pageTitle, expectedPageTitle);
 
-            // Want to see what a failure looks like?  Uncomment the line below to try the `.not` syntax!
+            // HINT: Want to see what a failure looks like?
+            //       Uncomment the line below to try the `.notEqual()` syntax!
             // assert.notEqual(pageTitle, expectedPageTitle);
+
+            // HINT: You can also change the page title in `verbo/public/index.html` to simulate an actual bug in the code, which should also cause your test to fail.
         });
     });
 });
 ```
 
-_Look Ma, no promises!_
+_Look Ma, no promises!_  We're simply using Node's built-in `assert` module, and our test runner will tell us if any of our assertions fail.
 
 3. Run it
 
@@ -127,7 +135,53 @@ You should see the example spec run with 1 passing test, and the page title prin
 
 ![1 passing test with sync mode on](https://content.screencast.com/users/gnorwood_homeaway/folders/Snagit/media/e48dd535-33ff-4fb2-8676-9e37c1aa2b00/2018-05-28_00-08-31.png)
 
-✅ This `sync` mode stuff is going to make running all of your future tests much easier!
+### Adding `chai`
+
+Chai enables much more powerful assertions via multiple styles, and for this workshop we'll use `expect()`.
+
+1. Install `chai` as a `devDependency`:
+
+```bash
+npm i --save-dev chai
+```
+
+1. Create a new file called `example-chai.spec.js`, and paste the following code:
+
+```js
+var expect = require('chai').expect;
+
+describe('Example using Chai\'s assertion library', function () {
+    describe('page title', function () {
+        var expectedPageTitle = "Verbo - Simple travel planning";
+
+        it('should be ' + expectedPageTitle, function () {
+            /* Notice we're removing the returned Promise, and breaking each `.then()` into its own line. */
+
+            // Navigate to the home page and test the page title
+            browser.url('/');
+
+            // Get the page title
+            var pageTitle = browser.getTitle();
+
+            // Log the page title (just for fun)
+            console.log('\n🤖 (Chai) The page title is: ' + pageTitle);
+
+            // Assert the page title is what we expect it to be
+            expect(pageTitle).to.equal(expectedPageTitle);
+
+            // HINT: Want to see what a failure looks like?  
+            //       Uncomment the line below to try the `.not.to.equal()` syntax!
+            // expect(pageTitle).not.to.equal(expectedPageTitle);
+
+            // HINT: You can also change the page title in `verbo/public/index.html` to simulate an actual bug in the code, which should also cause your test to fail.
+        });
+    });
+});
+```
+
+The above simply changes from the Node.js `assert` module to using Chai's, which is much more powerful.
+
+✅ You've made a lot of progress, great job!
 
 ---
 

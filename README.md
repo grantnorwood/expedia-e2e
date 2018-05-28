@@ -85,4 +85,4 @@ _Let's go!_
 - [Exercise 1: Setup the example application](exercise-1)
 - [Exercise 2: Install WebDriver.io and write your first test](exercise-2)
 - [Exercise 3: Using the `wdio` test runner](exercise-3)
-- [Exercise 4: Adding `mocha`](exercise-4)
+- [Exercise 4: Adding `mocha` and `chai`](exercise-4)

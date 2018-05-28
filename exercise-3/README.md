@@ -262,7 +262,7 @@ You can also try intentionally causing a test to fail to see what that looks lik
 
 ### Launch `wdio` with an `npm` script
 
-Let's add an `npm run test:browser` script so we can avoid calling `wdio` directly, and make it easier for other developers and build tools to run your e2e test suite.
+Let's add an `npm test` script so we can avoid calling `wdio` directly, and make it easier for other developers and build tools to run your e2e test suite.
 
 You can call your script just about anything, but at HomeAway, we typically have a pattern where a variety of "sub-scripts" use the colons to group similar scripts _(`:`)_.
 
@@ -273,13 +273,13 @@ Also, `npm run test` is more typically used to run unit tests.
 
 ```js
 "scripts": {
-    "test:browser": "wdio"
+    "test": "wdio"
 },
 ```
 
-3. Now, simply run `npm run test:browser` from now on to run your suite of tests.  Notice the `> wdio` in the output:
+3. Now, simply run `npm test` from now on to run your suite of tests.  Notice the `> wdio` in the output:
 
-![Running npm run test:browser](https://content.screencast.com/users/gnorwood_homeaway/folders/Snagit/media/6e5f3aec-80d0-4112-8e52-1c41bdad2070/2018-05-28_00-38-17.png)
+![Running npm test](https://content.screencast.com/users/gnorwood_homeaway/folders/Snagit/media/2bc13607-f9c7-4af4-aeb2-45b1d8ccb1ff/2018-05-28_02-11-34.png)
 
 **Pro tip:** Another benefit to using `npm` scripts is that they already search `node_modules/.bin` for local executables, so we can simple execute `wdio` without the rest of the path.
 
@@ -292,8 +292,8 @@ Also, `npm run test` is more typically used to run unit tests.
 1. You should now understand the difference between the standalone mode and using the WDIO test runner, and why WDIO is preferred.
 1. You can now run `wdio` tests, using the configuration file you created.
 1. You wrote your first simple test spec!
-1. We created an `npm run test:browser` script that will make running `wdio` easier in the future.
+1. We created an `npm test` script that will make running `wdio` easier in the future.
 
 ## Up next
 
-[Exercise 4: Adding `mocha`](../exercise-4)
+[Exercise 4: Adding `mocha` and `chai`](../exercise-4)
