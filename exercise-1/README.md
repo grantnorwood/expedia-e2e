@@ -61,6 +61,8 @@ You'll see the app spin up and print some info to the console:
 
 ![Verbo app running on localhost port 3000](https://content.screencast.com/users/gnorwood_homeaway/folders/Snagit/media/956c3a3f-5baf-428f-abd1-6ca2f6e2a345/2018-05-27_16-02-55.png)
 
+---
+
 ## What we learned
 
 - How to spin up our webserver to serve the example website (VeRBO)

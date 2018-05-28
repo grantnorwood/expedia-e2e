@@ -1,6 +1,15 @@
 # Exercise 3: Using the `wdio` test runner
 
-There are two methods of running your WebDriver.io tests, and they are well documented in the official docs called "[Standalone vs WDIO](http://webdriver.io/guide/getstarted/modes.html)".
+There are two methods of running your WebDriver.io tests, and they are well documented in the official docs called "[Standalone vs WDIO](http://webdriver.io/guide/getstarted/modes.html)".  Standalone mode is fine for first demos, or building your own entire framework, but **using WDIO is the preferred method of running e2e tests at scale.**
+
+> The WDIO Testrunner
+> [http://webdriver.io/guide/getstarted/modes.html#The-WDIO-Testrunner](http://webdriver.io/guide/getstarted/modes.html#The-WDIO-Testrunner)
+>
+> "The main purpose of WebdriverIO though is end to end testing on big scale. We therefore implemented a test runner that helps you to build a reliable test suite that is easy to read and maintain. The test runner takes care of many problems you are usually facing when working with plain automation libraries.
+>
+> For one it organizes your test runs and splits up test specs so your tests can be executed with maximum concurrency. It also handles session management and provides a lot of features that help you to debug problems and find errors in your tests."
+
+That being said, we'll use the WDIO test runner from this point forward!
 
 **Overview**
 
@@ -275,6 +284,8 @@ Also, `npm run test` is more typically used to run unit tests.
 **Pro tip:** Another benefit to using `npm` scripts is that they already search `node_modules/.bin` for local executables, so we can simple execute `wdio` without the rest of the path.
 
 ✅ **Congratulations!** With the `wdio` test runner setup, you're getting closer to a fully configured environment for running e2e tests.
+
+---
 
 ## What we learned
 

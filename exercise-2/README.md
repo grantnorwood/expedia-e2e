@@ -203,6 +203,8 @@ h1 was: Did you remember to pack your toothbrush?
 
 ✅ Your first test spec is running swimmingly!
 
+---
+
 ## What we learned
 
 - How to install and start a standalone Selenium server _(and we'll learn more in the next exercise about a more advanced method of running our tests!)_

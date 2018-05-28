@@ -129,6 +129,8 @@ You should see the example spec run with 1 passing test, and the page title prin
 
 ✅ This `sync` mode stuff is going to make running all of your future tests much easier!
 
+---
+
 ## What we learned
 
 1. We learned how to use mocha syntax to group our tests with `describe()` and `it()` functions.
