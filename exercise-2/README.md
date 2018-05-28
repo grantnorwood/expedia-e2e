@@ -8,7 +8,7 @@ These instructions are based heavily on the official [WebDriver.io docs](http://
 
 <!-- TOC -->
 
-- [Success Criteria](#success-criteria)
+- [Success criteria](#success-criteria)
 - [Instructions](#instructions)
   - [Start the app server](#start-the-app-server)
   - [Install the selenium-standalone server](#install-the-selenium-standalone-server)
@@ -23,7 +23,7 @@ These instructions are based heavily on the official [WebDriver.io docs](http://
 
 ---
 
-## Success Criteria
+## Success criteria
 
 1. The necessary Selenium and WebDriver tools are installed.
 1. Your first automated browser test should run successfully.

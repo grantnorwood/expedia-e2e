@@ -6,7 +6,7 @@ When we originally ran the `wdio` command to generate our config file, we chose 
 
 <!-- TOC -->
 
-- [Success Criteria](#success-criteria)
+- [Success criteria](#success-criteria)
 - [Instructions](#instructions)
   - [Switch to sync mode](#switch-to-sync-mode)
   - [Init the exercise](#init-the-exercise)
@@ -18,7 +18,7 @@ When we originally ran the `wdio` command to generate our config file, we chose 
 
 ---
 
-## Success Criteria
+## Success criteria
 
 1. Learn how to use mocha to group our tests appropriately.
 1. Learn the main difference between `sync` modes

@@ -6,7 +6,7 @@ There are two methods of running your WebDriver.io tests, and they are well docu
 
 <!-- TOC -->
 
-- [Success Criteria](#success-criteria)
+- [Success criteria](#success-criteria)
 - [Instructions](#instructions)
   - [Init the exercise](#init-the-exercise)
   - [Using the `wdio` command](#using-the-wdio-command)
@@ -23,7 +23,7 @@ There are two methods of running your WebDriver.io tests, and they are well docu
 
 ---
 
-## Success Criteria
+## Success criteria
 
 1. Understand the difference between the standalone mode and using the WDIO test runner.
 1. Setup your test runner to use `wdio`, the preferred way to run your e2e tests.

@@ -10,7 +10,7 @@ It was created using Facebook's [Create React App](https://github.com/facebook/c
 
 <!-- TOC -->
 
-- [Success Criteria](#success-criteria)
+- [Success criteria](#success-criteria)
 - [Instructions](#instructions)
   - [Install app dependencies](#install-app-dependencies)
   - [Start the app](#start-the-app)
@@ -21,7 +21,7 @@ It was created using Facebook's [Create React App](https://github.com/facebook/c
 
 ---
 
-## Success Criteria
+## Success criteria
 
 - Our webserver should serve the example website (VeRBO)
 
