@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "test:browser": "node tests/browser/example.spec.js"
+    "test:browser": "wdio"
   },
   "author": "Grant Norwood",
   "license": "ISC",

@@ -164,7 +164,7 @@ We can now execute our `wdio` test runner, though it's not going to give us any 
 ./node_modules/.bin/wdio
 ```
 
-You should see the `wdio` command execute successfully, using the `wdio.conf.js` file for configuration, executing our `exercise-3/tests/browserexample.spec.js` test file where we've logged some global `browser` info to the console.
+You should see the `wdio` command execute successfully, using the `wdio.conf.js` file for configuration, executing our `exercise-3/tests/browser/example.spec.js` test file where we've logged some global `browser` info to the console.
 
 ![wdio example output](https://content.screencast.com/users/gnorwood_homeaway/folders/Snagit/media/07ee0e92-06c4-4713-9c93-d98158dc6097/2018-05-27_21-28-07.png)
 
@@ -258,4 +258,4 @@ You can also try intentionally causing a test to fail to see what that looks lik
 
 ## Up next
 
-[Exercise 4: Adding `mocha`](exercise-4)
+[Exercise 4: Adding `mocha`](../exercise-4)
