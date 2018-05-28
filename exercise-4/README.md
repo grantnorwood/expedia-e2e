@@ -8,8 +8,7 @@ When we originally ran the `wdio` command to generate our config file, we chose 
 
 - [Success Criteria](#success-criteria)
 - [Instructions](#instructions)
-  - [Using the `wdio` command](#using-the-wdio-command)
-  - [(to-do)](#to-do)
+  - [Switch to sync mode](#switch-to-sync-mode)
 - [What we learned](#what-we-learned)
 
 <!-- /TOC -->
@@ -30,19 +29,43 @@ However, WebDriver.io can do a cool trick where we enable `sync` mode to `true`,
 
 You can read more about it in the official documentation, [It's all synchronous](http://webdriver.io/guide/getstarted/v4.html#It%E2%80%99s-all-synchronous).
 
-_Example of more synchronous code in "sync mode", without any promises:_
+_An example from the WebDriver.io docs of code that looks more synchronous, without any promises:_
 
 ```js
+// Notice the lack of return statements and `.then()`?
 describe('webdriver.io page', function() {
     it('should have the right title', function () {
+        // Navigate
         browser.url('/');
+
+        // Get the page's title
         var title = browser.getTitle();
+
+        // Assert the page title is what we expect it to be
         assert.equal(title, 'WebdriverIO - WebDriver bindings for Node.js');
     });
 });
 ```
 
-> "All commands now block the execution of the test process until they’ve resolved. No then calls have to be done anymore, we can just assign the direct response of the Selenium server to a variable."
+> **Important:** "All commands now block the execution of the test process until they’ve resolved. No then calls have to be done anymore, we can just assign the direct response of the Selenium server to a variable."
+
+### Init the exercise
+
+1. Change to the correct directory
+
+```bash
+cd tests/browser/exercise-4
+```
+
+2. Install dependencies
+
+```bash
+npm i
+```
+
+### Let's make our code look more synchronous
+
+_Because it makes everything appear cleaner and more readable!_
 
 1. In `wdio.conf.js`, change `sync` back to `true`:
 
@@ -52,32 +75,53 @@ sync: true,
 // ...
 ```
 
-1. In our `example.spec.js` test file, we need to change the code from returning a promise _(async style)_, to a handful of separate statements that will execute one after another (sync).
+1. We need to change the code from returning a promise _(async style)_, to a handful of separate statements that will execute one after another _(sync style)_.
+
+Open the `tests/browser/exercise-4/example.spec.js` test file, and replace it with the following code:
 
 ```js
-// example.spec.js
+/**
+ * example.spec.js
+ */
 var assert = require('assert');
 
-describe('Example', function() {
-  describe('page title', function() {
+describe('Example', function () {
+    describe('page title', function () {
+        var expectedPageTitle = "Verbo - Simple travel planning";
 
-    var expectedPageTitle = "Verbo - Simple travel planning";
+        it('should be ' + expectedPageTitle, function () {
+            /* Notice we're removing the returned Promise, and breaking each `.then()` into its own line. */
 
-    it('should be ' + expectedPageTitle, function() {
+            // Navigate to the home page and test the page title
+            browser.url('/');
 
-        /* Notice we're removing the returned Promise, and breaking each `.then()` into its own line. */
+            // Get the page title
+            var pageTitle = browser.getTitle();
 
-        // Navigate to the home page and test the page title
-        browser.url('/');
+            // Log the page title (just for fun)
+            console.log('🤖 The page title is: "' + pageTitle + '"');
 
-        // Get the page title
-        var pageTitle = browser.getTitle();
-        assert.equal(title, expectedPageTitle);
+            // Assert the page title is what we expect it to be
+            assert.equal(pageTitle, expectedPageTitle);
+
+            // Want to see what a failure looks like?  Uncomment the line below to try the `.not` syntax!
+            // assert.notEqual(pageTitle, expectedPageTitle);
+        });
     });
-
-  });
 });
 ```
+
+_Look Ma, no promises!_
+
+3. Run it
+
+```bash
+./node_modules/.bin/wdio
+```
+
+You should see the example spec run with 1 passing test, and the page title printed to the console:
+
+![1 passing test with sync mode on](https://content.screencast.com/users/gnorwood_homeaway/folders/Snagit/media/e48dd535-33ff-4fb2-8676-9e37c1aa2b00/2018-05-28_00-08-31.png)
 
 ## What we learned
 

@@ -1,5 +1,5 @@
 /**
-* Solution: An example test using the wdio test runner.
+* Solution: Example 3
 */
 
 var assert = require('assert');

@@ -10,8 +10,12 @@ It was created using Facebook's [Create React App](https://github.com/facebook/c
 
 <!-- TOC -->
 
-1. [Install app dependencies](#install-app-dependencies)
-2. [Start the app](#start-the-app)
+- [Success Criteria](#success-criteria)
+- [Instructions](#instructions)
+  - [Install app dependencies](#install-app-dependencies)
+  - [Start the app](#start-the-app)
+- [What we learned](#what-we-learned)
+- [Up next](#up-next)
 
 <!-- /TOC -->
 
@@ -56,3 +60,11 @@ You'll see the app spin up and print some info to the console:
 Open the app in your browser at [http://localhost:3000](http://localhost:3000). _You should now have a working web application to test against with the next exercises!_
 
 ![Verbo app running on localhost port 3000](https://content.screencast.com/users/gnorwood_homeaway/folders/Snagit/media/956c3a3f-5baf-428f-abd1-6ca2f6e2a345/2018-05-27_16-02-55.png)
+
+## What we learned
+
+- How to spin up our webserver to serve the example website (VeRBO)
+
+## Up next
+
+[Exercise 2: Install WebDriver.io and write your first test](../exercise-2)

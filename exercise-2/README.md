@@ -8,7 +8,7 @@ These instructions are based heavily on the official [WebDriver.io docs](http://
 
 <!-- TOC -->
 
-- [Success criteria](#success-criteria)
+- [Success Criteria](#success-criteria)
 - [Instructions](#instructions)
   - [Start the app server](#start-the-app-server)
   - [Install the selenium-standalone server](#install-the-selenium-standalone-server)
@@ -17,6 +17,7 @@ These instructions are based heavily on the official [WebDriver.io docs](http://
   - [Run the test](#run-the-test)
   - [Let's get fancier](#lets-get-fancier)
 - [What we learned](#what-we-learned)
+- [Up next](#up-next)
 
 <!-- /TOC -->
 
@@ -52,7 +53,7 @@ _The app should be running on [http://localhost:3000](http://localhost:3000)._
 
 1. Open a new tab in your terminal app.  We'll run the Selenium standalone server in this new shell.
 
-1. Install Selenium standalone server via NPM.  We're going to install it _globally_ so we don't have keep re-installing it for other exercises _(hence the `-g` argument)_.
+2. Install Selenium standalone server via NPM.  We're going to install it _globally_ so we don't have keep re-installing it for other exercises _(hence the `-g` argument)_.
 
 ```bash
 npm i -g selenium-standalone
@@ -205,3 +206,7 @@ h1 was: Did you remember to pack your toothbrush?
 - How to install and start a standalone Selenium server _(and we'll learn more in the next exercise about a more advanced method of running our tests!)_
 - How to install the `webdriverio` module and dependencies.
 - We wrote our first test!
+
+## Up next
+
+[Exercise 3: Using the `wdio` test runner](../exercise-3)

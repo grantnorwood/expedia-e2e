@@ -9,8 +9,13 @@ There are two methods of running your WebDriver.io tests, and they are well docu
 - [Success Criteria](#success-criteria)
 - [Instructions](#instructions)
   - [Using the `wdio` command](#using-the-wdio-command)
-  - [(to-do)](#to-do)
+  - [Create a configuration file](#create-a-configuration-file)
+  - [Customizing the configuration](#customizing-the-configuration)
+  - [Create a test spec](#create-a-test-spec)
+  - [Running `wdio`](#running-wdio)
+  - [First passing test](#first-passing-test)
 - [What we learned](#what-we-learned)
+- [Up next](#up-next)
 
 <!-- /TOC -->
 
@@ -22,6 +27,20 @@ There are two methods of running your WebDriver.io tests, and they are well docu
 2. Setup your test runner to use `wdio`, the preferred way to run your e2e tests.
 
 ## Instructions
+
+### Init the exercise
+
+1. Change to the correct directory
+
+```bash
+cd tests/browser/exercise-3
+```
+
+2. Install dependencies
+
+```bash
+npm i
+```
 
 ### Using the `wdio` command
 
@@ -236,3 +255,7 @@ You can also try intentionally causing a test to fail to see what that looks lik
 1. You should now understand the difference between the standalone mode and using the WDIO test runner, and why WDIO is preferred.
 2. You can now run `wdio` tests, using the configuration file you created.
 3. You wrote your first simple test spec!
+
+## Up next
+
+[Exercise 4: Adding `mocha`](exercise-4)
