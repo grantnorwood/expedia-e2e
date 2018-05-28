@@ -248,7 +248,7 @@ You can also try intentionally causing a test to fail to see what that looks lik
 
 ![1 test passing, 1 test failure](https://content.screencast.com/users/gnorwood_homeaway/folders/Snagit/media/1cfb91f4-0ead-41f2-8212-173f1ec21d96/2018-05-27_22-53-30.png)
 
-**Congratulations!** With the `wdio` test runner setup, you're getting closer to a fully configured environment for running e2e tests.
+✅ **Congratulations!** With the `wdio` test runner setup, you're getting closer to a fully configured environment for running e2e tests.
 
 ## What we learned
 
