@@ -23,7 +23,7 @@ describe('Homepage', function () {
 
         });
 
-        it('should render a "My Profile" link', function () {
+        it('should render a "My Profile" link with the correct url', function () {
 
             // TODO: Write a test to verify that the "My Profile" link exists in the navbar
             //       with the correct url, so that users always have access to the "/profile" url.

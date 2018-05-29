@@ -14,7 +14,7 @@ exports.config = {
     ],
     // Patterns to exclude.
     exclude: [
-        // './tests/browser/solution/**/*.spec.js'
+        './tests/browser/solution/**/*.spec.js'
     ],
     //
     // ============
