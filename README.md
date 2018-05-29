@@ -86,3 +86,6 @@ _Let's go!_
 - [Exercise 2: Install WebDriver.io and write your first test](exercise-2)
 - [Exercise 3: Using the `wdio` test runner](exercise-3)
 - [Exercise 4: Adding `mocha` and `chai`](exercise-4)
+- [Exercise 5: Practice with selectors and commands](../exercise-5)
+- [Exercise 6: The Page Object Pattern](../exercise-6)
+- [Exercise 7: Personas and paths](../exercise-7)

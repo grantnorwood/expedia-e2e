@@ -11,7 +11,7 @@ class PageNavbar extends Component {
             <Navbar inverse collapseOnSelect fixedTop>
                 <Navbar.Header>
                     <Navbar.Brand>
-                        <Link to="/"><strong>V<small>e</small>rbo</strong></Link>
+                        <Link to="/">Verbo</Link>
                     </Navbar.Brand>
                     <Navbar.Toggle />
                 </Navbar.Header>

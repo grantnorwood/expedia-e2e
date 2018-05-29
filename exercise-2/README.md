@@ -207,9 +207,9 @@ h1 was: Did you remember to pack your toothbrush?
 
 ## What we learned
 
-- How to install and start a standalone Selenium server _(and we'll learn more in the next exercise about a more advanced method of running our tests!)_
-- How to install the `webdriverio` module and dependencies.
-- We wrote our first test!
+- [x] How to install and start a standalone Selenium server _(and we'll learn more in the next exercise about a more advanced method of running our tests!)_
+- [x] How to install the `webdriverio` module and dependencies.
+- [x] We wrote our first test!
 
 ## Up next
 

@@ -17,7 +17,7 @@ class HomePage extends Component {
                     <h1>Did you remember to pack your toothbrush?</h1>
                     <br />
                     <p>
-                        <strong>V<small>e</small>rbo</strong> is a simple app for making sure you're perfectly prepared for your Vaction Rental experience.
+                        <strong>Verbo</strong> is a simple app for making sure you're perfectly prepared for your Vaction Rental experience.
                     </p>
                     <br />
                     <p>

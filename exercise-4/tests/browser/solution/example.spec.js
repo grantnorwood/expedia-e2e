@@ -8,8 +8,8 @@ describe('Example using Node\'s assertion library', function () {
     describe('page title', function () {
         var expectedPageTitle = "Verbo - Simple travel planning";
 
-        it('should be ' + expectedPageTitle, function () {
-            // Navigate to the home page and test the page title
+        it('should be "' + expectedPageTitle + '"', function () {
+            // Navigate to the home page
             browser.url('/');
 
             // Get the page title

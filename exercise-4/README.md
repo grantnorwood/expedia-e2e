@@ -100,8 +100,8 @@ describe('Example using Node\'s assertion library', function () {
     describe('page title', function () {
         var expectedPageTitle = "Verbo - Simple travel planning";
 
-        it('should be ' + expectedPageTitle, function () {
-            // Navigate to the home page and test the page title
+        it('should be "' + expectedPageTitle + '"', function () {
+            // Navigate to the home page
             browser.url('/');
 
             // Get the page title
@@ -156,8 +156,8 @@ describe('Example using Chai\'s assertion library', function () {
     describe('page title', function () {
         var expectedPageTitle = "Verbo - Simple travel planning";
 
-        it('should be ' + expectedPageTitle, function () {
-            // Navigate to the home page and test the page title
+        it('should be "' + expectedPageTitle + '"', function () {
+            // Navigate to the home page
             browser.url('/');
 
             // Get the page title
@@ -192,8 +192,8 @@ For extra practice, let's add another inner `describe()` block within the outerm
 describe('page h1', function () {
     var expectedText = "Did you remember to pack your toothbrush?";
 
-    it('should be ' + expectedText, function () {
-        // Navigate to the home page and test the page title
+    it('should be "' + expectedPageTitle + '"', function () {
+        // Navigate to the home page
         browser.url('/');
 
         // Get the page title
@@ -228,9 +228,9 @@ npm test
 
 ## What we learned
 
-1. We learned how to use mocha syntax to group our tests with `describe()` and `it()` functions.
-2. We learned that setting `sync` mode to `true` allows us to write more simple, synchronous-looking code in our tests, and let WebDriver.io extract away the inherently async behavior of testing with web browsers.
+- [x] We learned how to use mocha syntax to group our tests with `describe()` and `it()` functions.
+- [x] We learned that setting `sync` mode to `true` allows us to write more simple, synchronous-looking code in our tests, and let WebDriver.io extract away the inherently async behavior of testing with web browsers.
 
 ## Up next
 
-[Exercise 5:](../exercise-5)
+[Exercise 5: Practice with selectors and commands](../exercise-5)

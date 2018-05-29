@@ -65,7 +65,7 @@ You'll see the app spin up and print some info to the console:
 
 ## What we learned
 
-- How to spin up our webserver to serve the example website (VeRBO)
+- [x] How to spin up our webserver to serve the example website (VeRBO)
 
 ## Up next
 

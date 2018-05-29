@@ -8,8 +8,8 @@ describe('Example using Chai\'s assertion library', function () {
     describe('page title', function () {
         var expectedPageTitle = "Verbo - Simple travel planning";
 
-        it('should be ' + expectedPageTitle, function () {
-            // Navigate to the home page and test the page title
+        it('should be "' + expectedPageTitle + '"', function () {
+            // Navigate to the home page
             browser.url('/');
 
             // Get the page title
@@ -32,8 +32,8 @@ describe('Example using Chai\'s assertion library', function () {
     describe('page h1', function () {
         var expectedText = "Did you remember to pack your toothbrush?";
 
-        it('should be ' + expectedText, function () {
-            // Navigate to the home page and test the page title
+        it('should be "' + expectedPageTitle + '"', function () {
+            // Navigate to the home page
             browser.url('/');
 
             // Get the h1 element text

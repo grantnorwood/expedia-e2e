@@ -8,8 +8,8 @@ describe('Example', function () {
     describe('page title', function () {
         var expectedPageTitle = "Verbo - Simple travel planning";
 
-        it('should be ' + expectedPageTitle, function () {
-            // Navigate to the home page and test the page title.
+        it('should be "' + expectedPageTitle + '"', function () {
+            // Navigate to the home page.
             return browser
                 .url('/')
                 .getTitle().then(function (title) {

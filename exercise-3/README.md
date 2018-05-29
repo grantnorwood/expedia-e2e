@@ -200,8 +200,8 @@ describe('Example', function () {
     describe('page title', function () {
         var expectedPageTitle = "Verbo - Simple travel planning";
 
-        it('should be ' + expectedPageTitle, function () {
-            // Navigate to the home page and test the page title.
+        it('should be "' + expectedPageTitle + '"', function () {
+            // Navigate to the home page.
             return browser
                 .url('/')
                 .getTitle().then(function (title) {
@@ -260,10 +260,10 @@ Also, `npm run test` is more typically used to run unit tests.
 
 ## What we learned
 
-1. You should now understand the difference between the standalone mode and using the WDIO test runner, and why WDIO is preferred.
-1. You can now run `wdio` tests, using the configuration file you created.
-1. You wrote your first simple test spec!
-1. We created an `npm test` script that will make running `wdio` easier in the future.
+- [x] You should now understand the difference between the standalone mode and using the WDIO test runner, and why WDIO is preferred.
+- [x] You can now run `wdio` tests, using the configuration file you created.
+- [x] You wrote your first simple test spec!
+- [x] We created an `npm test` script that will make running `wdio` easier in the future.
 
 ## Up next
 
