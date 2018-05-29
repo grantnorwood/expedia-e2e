@@ -11,8 +11,9 @@ When we originally ran the `wdio` command to generate our config file, we chose 
   - [Switch to sync mode](#switch-to-sync-mode)
   - [Enable `sync` mode](#enable-sync-mode)
   - [Init the exercise](#init-the-exercise)
-  - [Use Mocha](#use-mocha)
+  - [Using Mocha](#using-mocha)
   - [Adding `chai`](#adding-chai)
+  - [Expect the homepage's h1 text to be correct](#expect-the-homepages-h1-text-to-be-correct)
 - [What we learned](#what-we-learned)
 - [Up next](#up-next)
 
@@ -82,7 +83,7 @@ cd tests/browser/exercise-4
 npm i
 ```
 
-### Use Mocha
+### Using Mocha
 
 Mocha is already included in your project when you installed `wdio`.  But we do need to update our code to use it.
 

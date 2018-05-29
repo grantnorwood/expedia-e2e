@@ -8,6 +8,8 @@ In order to become more familiar with the extensive list of WebDriver.io command
 
 - [Success criteria](#success-criteria)
 - [Instructions](#instructions)
+  - [💪 Challenge 1: The navbar](#💪-challenge-1-the-navbar)
+  - [💪 Challenge 2: Travel alerts](#💪-challenge-2-travel-alerts)
 - [What we learned](#what-we-learned)
 - [Up next](#up-next)
 
@@ -24,11 +26,11 @@ In order to become more familiar with the extensive list of WebDriver.io command
 
 For simplicity, I've already copied the solution from the previous exercise into `exercise-5/tests/browser/homepage.spec.js`, so we'll start from there.  The `homepage.spec.js` file will contain all our homepage tests.
 
-### Using selectors to interact with browser elements
+We'll use **selectors** to interact with browser elements.
 
 WebDriver.io uses CSS-style selectors to access elements in the browser's DOM.  [Learn more about selectors](http://webdriver.io/guide/usage/selectors.html)
 
-#### 💪 Challenge 1: The navbar
+### 💪 Challenge 1: The navbar
 
 Write two tests in the stubbed out `it()` blocks in `homepage.spec.js`.
 
@@ -39,7 +41,7 @@ Use the `browser` object and Chai's `expect()` function as we did in the previou
 
 _(See the [solution directory](tests/browser/solution) if you'd like to simply copy/pasta the code.)_
 
-##### We've found some problems
+#### We've found some problems
 
 You might begin to notice that we're discovering some problems that will only get bigger as we write more tests and reuse more code.
 
@@ -50,7 +52,7 @@ _For example:_
 
 _In the upcoming section, let's see if we can do better!_
 
-#### 💪 Challenge 2: Travel alerts
+### 💪 Challenge 2: Travel alerts
 
 In this second challenge, we'll correct a couple ineffeciencies to help us understand the problems that The Page Object Pattern attempts to solve in the next exercise.
 
