@@ -32,7 +32,7 @@ describe('Example using Chai\'s assertion library', function () {
     describe('page h1', function () {
         var expectedText = "Did you remember to pack your toothbrush?";
 
-        it('should be "' + expectedPageTitle + '"', function () {
+        it('should be "' + expectedText + '"', function () {
             // Navigate to the home page
             browser.url('/');
 
