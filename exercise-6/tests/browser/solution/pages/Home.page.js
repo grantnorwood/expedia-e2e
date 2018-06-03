@@ -3,33 +3,19 @@
 /**
   * Pages generally contains three parts:
   *
-  * 1. selectors
-  * 2. getters
-  * 3. actions
+  * 1. getters
+  * 2. actions
   *
   */
 class HomePage {
-    constructor() {
-        super();
-
-        // --------------------------------------------------------------
-        // Define element selectors.
-        // --------------------------------------------------------------
-
-        this.selectors = {
-            jumbotronPrimaryButton = '.jumbotron .btn-primary'
-        }
-
-    }
-
-
     // --------------------------------------------------------------
     // Define element getters.
     // --------------------------------------------------------------
 
-    get jumbotronPrimaryButton() {
-        return browser.element(this.selectors.jumbotronPrimaryButton);
-    }
+    get navBarBrandLink() { return browser.element('.navbar-brand'); }
+    get myProfileLink() { return browser.element('.navbar-nav > li > a[href="/profile"]'); }
+    get travelAlertsNavItem() {return browser.element('.navbar-nav > li > a[href="/travel-alerts"]'); }
+    get travelAlertsListItems() {return browser.elements('.travel-alerts-list > .list-group > .list-group-item');} // Note use of browser.elements() plural
 
 
     // --------------------------------------------------------------
@@ -39,8 +25,43 @@ class HomePage {
     /**
     * Get the element text.
     */
-    getJumbotronPrimaryButtonText() {
-        this.jumbotronPrimaryButton.getText();
+    getNavBarBrandText() {
+        return this.navBarBrandLink.getText();
+    }
+
+    /**
+    * Get the element text.
+    */
+    getMyProfileLinkText() {
+        return this.myProfileLink.getText();
+    }
+
+    /**
+    * Get the element text.
+    */
+    getMyProfileLinkUrl() {
+        return this.myProfileLink.getAttribute('href');
+    }
+
+    /**
+    * Get the element text.
+    */
+    getTravelAlertsNavItemText() {
+        return this.travelAlertsNavItem.getText();
+    }
+
+    /**
+    * Get the element's href attribute.
+    */
+    getTravelAlertsNavItemUrl() {
+        return this.travelAlertsNavItem.getAttribute('href');
+    }
+
+    /**
+    * Get the count of Travel Alert list items.
+    */
+    getTravelAlertsListItemsCount() {
+        return this.travelAlertsListItems.value.length || 0;
     }
 }
 

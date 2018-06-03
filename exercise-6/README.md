@@ -41,33 +41,16 @@ Consider the following file named `tests/browser/pages/HomePage`:
 /**
   * Pages generally contains three parts:
   *
-  * 1. selectors
-  * 2. getters
-  * 3. actions
+  * 1. getters
+  * 2. actions
   *
   */
 class HomePage {
-    constructor() {
-        super();
-
-        // --------------------------------------------------------------
-        // Define element selectors.
-        // --------------------------------------------------------------
-
-        this.selectors = {
-            jumbotronPrimaryButton = '.jumbotron .btn-primary'
-        }
-
-    }
-
-
     // --------------------------------------------------------------
     // Define element getters.
     // --------------------------------------------------------------
 
-    get jumbotronPrimaryButton() {
-        return browser.element(this.selectors.jumbotronPrimaryButton);
-    }
+    get jumbotronPrimaryButton() { return browser.element('.jumbotron .btn-primary'); }
 
 
     // --------------------------------------------------------------
@@ -82,7 +65,7 @@ class HomePage {
     }
 }
 
-module.exports = HomePage;
+module.exports = new HomePage();
 
 ```
 
@@ -167,11 +150,12 @@ We're going to use the solution from the previous exercise-5 to begin with, and 
 
 I've already created that initial test spec file as `tests/browser/specs/homepage.spec.js`, but we must create a Page object for the spec to interact with.
 
-1. Open the `Home.page.js` file in the `tests/browser/pages` directory, where the 3 parts of the Page Object Pattern will be implemented. _(Look for the `TODO` comments.)_
-2. For each of the elements used in our `tests/browser/specs/homepage.spec.js` test, create a selector, getter, and action in the `tests/browser/pages/Home.page.js` page object.
+1. Open the `Home.page.js` file in the `tests/browser/pages` directory, where the getter and action parts of the Page Object Pattern will be implemented. _(Look for the `TODO` comments.)_
+2. For each of the elements used in our `tests/browser/specs/homepage.spec.js` test, create a **getter** and an **action** in the `tests/browser/pages/Home.page.js` page object.
 
+_**Hint:** look for anywhere we've called `browser.element()` or `browser.elements()` to see which getters you'll need to create!_
 
-_(See the [solution directory](tests/browser/solution) if you'd like to simply copy/pasta the code.)_
+_(See the [solution directory](tests/browser/solution) if you'd like to preview, or simply copy/pasta the code.)_
 
 ✅ And now you've got a good start towards modeling your pages and components!
 
