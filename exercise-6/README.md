@@ -20,8 +20,8 @@ _(to-do)_
 ## Success criteria
 
 1. Understand why the Page Object Pattern is so useful
-2. Understand the 3 most important parts of the pattern
-3. Understand why Components can also use this pattern
+1. Understand the 2 most important parts of the pattern
+1. Understand that Components can also use this pattern
 
 ## Instructions
 
@@ -136,7 +136,9 @@ _(See the [solution directory](tests/browser/solution) if you'd like to preview,
 
 ## What we learned
 
-_(to-do)_
+1. We've learned how the Page Object Pattern abstracts away the accessing of elements from our test spec, making code much more readable, reusable and maintainable.
+1. We've learned the 2 most important parts of the pattern - **getters** and **actions**
+1. We now know that the "Page Object Pattern" can actually be used for all sorts of component architecture.
 
 ## Up next
 
