@@ -128,6 +128,8 @@ I've already created that initial test spec file as `tests/browser/specs/homepag
 
 _**Hint:** look for anywhere we've called `browser.element()` or `browser.elements()` to see which getters you'll need to create!_
 
+#### Solution
+
 _(See the [solution directory](tests/browser/solution) if you'd like to preview, or simply copy/pasta the code.)_
 
 ✅ And now you've got a good start towards modeling your pages and components!

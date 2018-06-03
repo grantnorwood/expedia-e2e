@@ -39,6 +39,8 @@ Write two tests in the stubbed out `it()` blocks in `homepage.spec.js`.
 
 Use the `browser` object and Chai's `expect()` function as we did in the previous exercises as a starting point.
 
+#### Solution
+
 _(See the [solution directory](tests/browser/solution) if you'd like to preview, or simply copy/pasta the code.)_
 
 #### We've found some problems
@@ -65,6 +67,8 @@ But for now, write two tests in the stubbed out `it()` blocks in `homepage.spec.
 
 - `it('should render the correct count of travel alerts in the navbar badge')`
 - `it('should render the correct count of travel alerts in the homepage widget')`
+
+#### Solution
 
 _(See the [solution directory](tests/browser/solution) if you'd like to preview, or simply copy/pasta the code.)_
 
