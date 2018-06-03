@@ -11,7 +11,7 @@ exports.config = {
     //
     specs: [
         './tests/browser/**/*.spec.js'
-        // './tests/browser/solution/**/*.spec.js'
+        // './tests/browser/solution/**/*.spec.js' // only run the solution test specs
     ],
     // Patterns to exclude.
     exclude: [

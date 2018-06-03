@@ -4,15 +4,12 @@
 
 var expect = require('chai').expect;
 var config = require('../../../../wdio.conf').config;
-var HomePage = require('../pages/Home.page');
+var homePage = require('../pages/Home.page');
 
 /**
  * This group of tests are all related to the site's home page.
  */
 describe('Homepage', function () {
-
-    // Init page objects.
-    var homePage = new HomePage();
 
     /**
      * This describe() group contains multiple it() tests for verifying the navbar works correctly.

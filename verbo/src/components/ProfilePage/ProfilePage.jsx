@@ -50,11 +50,11 @@ class ProfilePage extends Component {
         })
     }
 
-    onAboutMeChange = (ev) => {
-        var newAboutMe = ev.target.value;
+    onBioChange = (ev) => {
+        var newBio = ev.target.value;
         var profile = this.state.profile;
 
-        profile.aboutMe = newAboutMe;
+        profile.bio = newBio;
 
         this.setState({
             profile
@@ -118,24 +118,24 @@ class ProfilePage extends Component {
                         </Col>
                     </FormGroup>
 
-                    <FormGroup controlId="aboutMe">
+                    <FormGroup controlId="bio">
                         <Col componentClass={ControlLabel} sm={2}>
-                            About Me
+                            Bio
                         </Col>
                         <Col sm={10}>
                             <FormControl
                                 componentClass="textarea"
                                 placeholder=""
-                                value={this.state.profile.aboutMe}
+                                value={this.state.profile.bio}
                                 rows={4}
-                                onChange={this.onAboutMeChange}
+                                onChange={this.onBioChange}
                             />
                         </Col>
                     </FormGroup>
 
-                    <FormGroup>
+                    <FormGroup controlId="saveButton">
                         <Col smOffset={2} sm={10}>
-                            <Button type="submit">Save</Button>
+                            <Button type="submit" id="saveButton">Save</Button>
                         </Col>
                     </FormGroup>
                 </Form>

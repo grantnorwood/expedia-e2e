@@ -34,6 +34,8 @@ _Use the following questions to help choose which user paths and interactions sh
 
 - [Success criteria](#success-criteria)
 - [Instructions](#instructions)
+  - [Init the exercise](#init-the-exercise)
+  - [Personas](#personas)
 - [What we learned](#what-we-learned)
 - [Up next](#up-next)
 
@@ -49,13 +51,31 @@ _Use the following questions to help choose which user paths and interactions sh
 
 ## Instructions
 
-_(to-do)_
+### Init the exercise
+
+1. Change to the correct directory
+
+```bash
+cd tests/browser/exercise-4
+```
+
+2. Install dependencies
+
+```bash
+npm i
+```
 
 ### Personas
 
 View the [HomeAway Partner Personas](http://design.homeaway.com/research/personas/partner/) as an example, which were curated by our Design Research Team.
 
-✅ You've made a lot of progress, great job!
+For this exercise, we chose [Nina the Newcomer](http://design.homeaway.com/research/personas/partner/newcomer/).  We'll test the following critical paths for Nina:
+
+- Save new profile info successfully
+- Add a new trip
+- Add a new task
+
+✅ And that's how you organize your e2e tests to align with your brand's identified personas and critical paths!
 
 ---
 

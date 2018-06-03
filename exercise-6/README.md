@@ -12,6 +12,7 @@ The [WebDriver.io Page Object Pattern](http://webdriver.io/guide/testrunner/page
 
 - [Success criteria](#success-criteria)
 - [Instructions](#instructions)
+  - [Init the exercise](#init-the-exercise)
   - [The 2 main parts of a Page object](#the-2-main-parts-of-a-page-object)
   - [💪 Challenge: Create a Page Object for our Home page](#💪-challenge-create-a-page-object-for-our-home-page)
 - [What we learned](#what-we-learned)
@@ -29,7 +30,21 @@ The [WebDriver.io Page Object Pattern](http://webdriver.io/guide/testrunner/page
 
 ## Instructions
 
-Notice the new file structure in the `tests/browser` directory.  I've further organized those into child directories for `pages` and `specs`.
+### Init the exercise
+
+1. Change to the correct directory
+
+```bash
+cd tests/browser/exercise-4
+```
+
+2. Install dependencies
+
+```bash
+npm i
+```
+
+_Notice the new file structure in the `tests/browser` directory.  I've further organized those into child directories for `pages` and `specs`._
 
 ### The 2 main parts of a Page object
 

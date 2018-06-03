@@ -8,6 +8,7 @@ In order to become more familiar with the extensive list of WebDriver.io command
 
 - [Success criteria](#success-criteria)
 - [Instructions](#instructions)
+  - [Init the exercise](#init-the-exercise)
   - [💪 Challenge 1: The navbar](#💪-challenge-1-the-navbar)
   - [💪 Challenge 2: Travel alerts](#💪-challenge-2-travel-alerts)
 - [What we learned](#what-we-learned)
@@ -29,6 +30,20 @@ For simplicity, I've already copied the solution from the previous exercise into
 We'll use **selectors** to interact with browser elements.
 
 WebDriver.io uses CSS-style selectors to access elements in the browser's DOM.  [Learn more about selectors](http://webdriver.io/guide/usage/selectors.html)
+
+### Init the exercise
+
+1. Change to the correct directory
+
+```bash
+cd tests/browser/exercise-4
+```
+
+2. Install dependencies
+
+```bash
+npm i
+```
 
 ### 💪 Challenge 1: The navbar
 
