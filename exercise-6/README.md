@@ -32,7 +32,7 @@ Notice the new file structure in the `tests/browser` directory.  I've further or
 1. Define element getters
 1. Define element actions
 
-Consider the following file named `tests/browser/pages/HomePage`:
+Consider the following file named `tests/browser/pages/Home.page.js`:
 
 ```js
 'use strict';
