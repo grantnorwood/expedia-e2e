@@ -1,6 +1,10 @@
 # Exercise 6: The Page Object Pattern
 
-_(to-do)_
+The [WebDriver.io Page Object Pattern](http://webdriver.io/guide/testrunner/pageobjects.html) documentation is fantastic, and it wouldn't hurt to read it over a few times to make sure you really understand the principles.
+
+> "The goal behind page objects is to abstract any page information away from the actual tests.
+> 
+> Ideally you should store all selectors or specific instructions that are unique for a certain page in a page object, so that you still can run your test after you’ve completely redesigned your page."
 
 **Overview**
 
