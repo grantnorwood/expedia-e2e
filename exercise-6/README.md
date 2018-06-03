@@ -8,6 +8,8 @@ _(to-do)_
 
 - [Success criteria](#success-criteria)
 - [Instructions](#instructions)
+  - [The 3 main parts of a Page object](#the-3-main-parts-of-a-page-object)
+  - [💪 Challenge: Create a Page Object for our Home page](#💪-challenge-create-a-page-object-for-our-home-page)
 - [What we learned](#what-we-learned)
 - [Up next](#up-next)
 
@@ -17,17 +19,161 @@ _(to-do)_
 
 ## Success criteria
 
-1. 
+1. Understand why the Page Object Pattern is so useful
+2. Understand the 3 most important parts of the pattern
+3. Understand why Components can also use this pattern
 
 ## Instructions
 
-_(to-do)_
+Notice the new file structure in the `tests/browser` directory.  I've further organized those into child directories for `pages` and `specs`.
 
-### Title
+### The 3 main parts of a Page object
 
-_(to-do)_
+1. Define element selectors
+1. Define element getters
+1. Define element actions
 
-✅ You've made a lot of progress, great job!
+Consider the following file named `tests/browser/pages/HomePage`:
+
+```js
+'use strict';
+
+/**
+  * Pages generally contains three parts:
+  *
+  * 1. selectors
+  * 2. getters
+  * 3. actions
+  *
+  */
+class HomePage {
+    constructor() {
+        super();
+
+        // --------------------------------------------------------------
+        // Define element selectors.
+        // --------------------------------------------------------------
+
+        this.selectors = {
+            jumbotronPrimaryButton = '.jumbotron .btn-primary'
+        }
+
+    }
+
+
+    // --------------------------------------------------------------
+    // Define element getters.
+    // --------------------------------------------------------------
+
+    get jumbotronPrimaryButton() {
+        return browser.element(this.selectors.jumbotronPrimaryButton);
+    }
+
+
+    // --------------------------------------------------------------
+    // Define trusted interactions with elements.
+    // --------------------------------------------------------------
+
+    /**
+    * Get the element text.
+    */
+    getJumbotronPrimaryButtonText() {
+        this.jumbotronPrimaryButton.getText();
+    }
+}
+
+module.exports = HomePage;
+
+```
+
+_Let's walk through this a bit ..._
+
+We have each of the 3 parts of a Page Object - **selectors**, **getters** and **actions**.
+
+#### Selectors
+
+It's convenient to store your selectors in one place, defined in the constructor.  I've created a new property called `selectors` specifically for this.
+
+```js
+class HomePage {
+    constructor() {
+        super();
+
+        // --------------------------------------------------------------
+        // Define element selectors.
+        // --------------------------------------------------------------
+
+        this.selectors = {
+            jumbotronPrimaryButton = '.jumbotron .btn-primary'
+        }
+
+    }
+
+  // ...
+
+}
+```
+
+#### Getters
+
+With our selectors defined, we can now define our getter functions.  We'll use this syntax to encapsulate calls to `browser.element()` and `browser.elements()`, which will save us code and time later.
+
+```js
+class HomePage {
+
+    // ...
+
+    // --------------------------------------------------------------
+    // Define element getters.
+    // --------------------------------------------------------------
+
+    get jumbotronPrimaryButton() {
+        return browser.element(this.selectors.jumbotronPrimaryButton);
+    }
+
+    // ...
+
+}
+```
+
+#### Actions
+
+Now that the page elements are easy to access via our getter functions, we can begin to define functions to encapsulate interactions on the page, abstracting away the details so from your test specs.
+
+```js
+class HomePage {
+
+    // ...
+
+    // --------------------------------------------------------------
+    // Define trusted interactions with elements.
+    // --------------------------------------------------------------
+
+    /**
+    * Get the element text.
+    */
+    getJumbotronPrimaryButtonText() {
+        this.jumbotronPrimaryButton.getText();
+    }
+
+    // ...
+
+}
+```
+
+### 💪 Challenge: Create a Page Object for our Home page
+
+We're going to use the solution from the previous exercise-5 to begin with, and we'll transform it to use The Page Object pattern.
+
+I've already created that initial test spec file as `tests/browser/specs/homepage.spec.js`, but we must create a Page object for the spec to interact with.
+
+1. Open the `Home.page.js` file in the `tests/browser/pages` directory, where the 3 parts of the Page Object Pattern will be implemented. _(Look for the `TODO` comments.)_
+2. For each of the elements used in our `tests/browser/specs/homepage.spec.js` test, create a selector, getter, and action in the `tests/browser/pages/Home.page.js` page object.
+
+
+_(See the [solution directory](tests/browser/solution) if you'd like to simply copy/pasta the code.)_
+
+✅ And now you've got a good start towards modeling your pages and components!
 
 ---
 

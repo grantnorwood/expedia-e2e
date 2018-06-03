@@ -59,14 +59,22 @@ describe('Homepage', function () {
 
         var expectedTravelAlertsCount = 1;
 
+        /**
+         * Executes before each of the it() functions.
+         */
+        // beforeEach(function() {
+        //     // Navigate to the home page
+        //     browser.url('/');
+        // });
+
         it('should render the correct count of travel alerts in the navbar badge', function () {
+            // Navigate to the home page
+            browser.url('/');
+
             // getText() will return the count text from within the <span />, too
             var expectedLinkText = 'Travel Alerts ' + expectedTravelAlertsCount;
             // Making `baseUrl` a global variable is very necessary, it's used often!  (Fix that up in Challenge 1, while you're at it.)
             var expectedLinkUrl = baseUrl + '/travel-alerts';
-
-            // Navigate to the home page
-            browser.url('/');
 
             // Get the element and cache it.  Now the selector is only in one place for this test block.
             // (See http://webdriver.io/api/protocol/element.html)

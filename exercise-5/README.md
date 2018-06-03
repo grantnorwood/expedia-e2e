@@ -37,7 +37,7 @@ Write two tests in the stubbed out `it()` blocks in `homepage.spec.js`.
 - `it('should render the correct app name')`
 - `it('should render a "My Profile" link')`
 
-Use the `browser` object and Chai's `expect()` function as we did in the previous exercises as a starting point.  You can copy/pasta, if you like - it'll save you time!
+Use the `browser` object and Chai's `expect()` function as we did in the previous exercises as a starting point.
 
 _(See the [solution directory](tests/browser/solution) if you'd like to simply copy/pasta the code.)_
 
