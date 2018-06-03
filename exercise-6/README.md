@@ -8,7 +8,7 @@ _(to-do)_
 
 - [Success criteria](#success-criteria)
 - [Instructions](#instructions)
-  - [The 3 main parts of a Page object](#the-3-main-parts-of-a-page-object)
+  - [The 2 main parts of a Page object](#the-2-main-parts-of-a-page-object)
   - [💪 Challenge: Create a Page Object for our Home page](#💪-challenge-create-a-page-object-for-our-home-page)
 - [What we learned](#what-we-learned)
 - [Up next](#up-next)
@@ -27,9 +27,8 @@ _(to-do)_
 
 Notice the new file structure in the `tests/browser` directory.  I've further organized those into child directories for `pages` and `specs`.
 
-### The 3 main parts of a Page object
+### The 2 main parts of a Page object
 
-1. Define element selectors
 1. Define element getters
 1. Define element actions
 
@@ -39,7 +38,7 @@ Consider the following file named `tests/browser/pages/HomePage`:
 'use strict';
 
 /**
-  * Pages generally contains three parts:
+  * Pages generally contains two parts:
   *
   * 1. getters
   * 2. actions
@@ -71,35 +70,11 @@ module.exports = new HomePage();
 
 _Let's walk through this a bit ..._
 
-We have each of the 3 parts of a Page Object - **selectors**, **getters** and **actions**.
-
-#### Selectors
-
-It's convenient to store your selectors in one place, defined in the constructor.  I've created a new property called `selectors` specifically for this.
-
-```js
-class HomePage {
-    constructor() {
-        super();
-
-        // --------------------------------------------------------------
-        // Define element selectors.
-        // --------------------------------------------------------------
-
-        this.selectors = {
-            jumbotronPrimaryButton = '.jumbotron .btn-primary'
-        }
-
-    }
-
-  // ...
-
-}
-```
+We have each of the two parts of a Page Object - **getters** and **actions**.
 
 #### Getters
 
-With our selectors defined, we can now define our getter functions.  We'll use this syntax to encapsulate calls to `browser.element()` and `browser.elements()`, which will save us code and time later.
+We'll use this syntax to encapsulate calls to `browser.element()` and `browser.elements()`, which will save us code and time later.  Also, all of the selectors for each element _(or array of elements)_ are now located in one place.
 
 ```js
 class HomePage {
@@ -110,9 +85,7 @@ class HomePage {
     // Define element getters.
     // --------------------------------------------------------------
 
-    get jumbotronPrimaryButton() {
-        return browser.element(this.selectors.jumbotronPrimaryButton);
-    }
+    get jumbotronPrimaryButton() { return browser.element('.jumbotron .btn-primary'); }
 
     // ...
 
