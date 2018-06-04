@@ -34,10 +34,6 @@ In order to run our first test, we'll need to start our example app server, inst
 
 > So expect to have a few terminal windows (or tabs) open 🤓
 
-Take a look at the application in your code editor.  Notice that in the `exercise-2` folder, I've already scaffolded out an NPM project to save some time, along with an empty `src` folder to give you a better idea of how this might work within your own applications.  
-
-_Our e2e tests using WebDriver are typically installed and run in the same NPM project as our app when out in the wild._
-
 ### Start the app server
 
 In your terminal, `cd` to the `verbo` directory, and start the app.  _In the future, we'll just assume this app is always running._
@@ -96,14 +92,13 @@ npm i --save-dev webdriverio
 
 ### Create your first test file
 
-1. Create a new `tests/browser` directory where your WebDriver test specs will live.  _This structure is a bit different than the official docs, but more closely matches how HomeAway structures our test specs directory as a sibling of your standard `/src` directory in the root of the repository.
+1. Take a look at the application in your code editor.  Notice that in the `exercise-2` folder, I've already scaffolded out an NPM project to save some time, along with an empty `src` folder to give you a better idea of how this might work within your own applications.  
 
-```bash
-mkdir tests/browser
-cd tests/browser
-```
+_Our e2e tests using WebDriver are typically installed and run in the same NPM project as our app when out in the wild._
 
-1. From the official [WebDriver docs](http://webdriver.io/guide.html), let's copy their example test code.  Create a new file called `example.spec.js` and copy the following into it:
+![project structure](https://content.screencast.com/users/gnorwood_homeaway/folders/Snagit/media/b2a1ebfd-7ded-45db-bffe-e3a142bd6426/2018-06-03_20-33-07.png)
+
+2. From the official [WebDriver docs](http://webdriver.io/guide.html), let's copy their example test code.  Create a new file called `example.spec.js` and copy the following into it:
 
 ```js
 var webdriverio = require('webdriverio');
