@@ -148,7 +148,7 @@ _**Side note:** Chai's `should()` syntax has some gotchas, as explained in the [
 npm i --save-dev chai
 ```
 
-1. Create a new file called `example-chai.spec.js`, and paste the following code:
+2. Create a new file called `example-chai.spec.js`, and paste the following code:
 
 ```js
 var expect = require('chai').expect;
