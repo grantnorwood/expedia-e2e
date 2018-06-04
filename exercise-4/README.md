@@ -8,9 +8,9 @@ When we originally ran the `wdio` command to generate our config file, we chose 
 
 - [Success criteria](#success-criteria)
 - [Instructions](#instructions)
+  - [Init the exercise](#init-the-exercise)
   - [Switch to sync mode](#switch-to-sync-mode)
   - [Enable `sync` mode](#enable-sync-mode)
-  - [Init the exercise](#init-the-exercise)
   - [Using Mocha](#using-mocha)
   - [Adding `chai`](#adding-chai)
   - [Expect the homepage's h1 text to be correct](#expect-the-homepages-h1-text-to-be-correct)
@@ -28,6 +28,20 @@ When we originally ran the `wdio` command to generate our config file, we chose 
 1. Install `chai` and learn to use `expect()` for assertions.
 
 ## Instructions
+
+### Init the exercise
+
+1. Change to the correct directory
+
+```bash
+cd exercise-4
+```
+
+2. Install dependencies
+
+```bash
+npm i
+```
 
 ### Switch to sync mode
 
@@ -67,20 +81,6 @@ _Because it makes everything appear cleaner and more readable!_
 // ...
 sync: true,
 // ...
-```
-
-### Init the exercise
-
-1. Change to the correct directory
-
-```bash
-cd exercise-4
-```
-
-2. Install dependencies
-
-```bash
-npm i
 ```
 
 ### Using Mocha

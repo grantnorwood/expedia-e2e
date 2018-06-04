@@ -12,6 +12,7 @@ These instructions are based heavily on the official [WebDriver.io docs](http://
 - [Instructions](#instructions)
   - [Start the app server](#start-the-app-server)
   - [Install the selenium-standalone server](#install-the-selenium-standalone-server)
+  - [Init the exercise](#init-the-exercise)
   - [Install WebDriver.io via NPM](#install-webdriverio-via-npm)
   - [Create your first test file](#create-your-first-test-file)
   - [Run the test](#run-the-test)
