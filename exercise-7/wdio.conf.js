@@ -1,3 +1,4 @@
+// Set a long timeout for debugging purposes during development (this would not be set so high outside of dev)
 var veryLongTimeout = 5 * 60 * 1000;
 
 exports.config = {

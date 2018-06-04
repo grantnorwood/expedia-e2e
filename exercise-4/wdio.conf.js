@@ -1,3 +1,6 @@
+// Set a long timeout for debugging purposes during development (this would not be set so high outside of dev)
+var veryLongTimeout = 5 * 60 * 1000;
+
 exports.config = {
     
     //
@@ -80,7 +83,7 @@ exports.config = {
     baseUrl: 'http://localhost:3000',
     //
     // Default timeout for all waitFor* commands.
-    waitforTimeout: 10000,
+    waitforTimeout: veryLongTimeout,
     //
     // Default timeout in milliseconds for request
     // if Selenium Grid doesn't send response
@@ -130,7 +133,8 @@ exports.config = {
     // Options to be passed to Mocha.
     // See the full list at http://mochajs.org/
     mochaOpts: {
-        ui: 'bdd'
+        ui: 'bdd',
+        timeout: veryLongTimeout
     },
     //
     // =====
