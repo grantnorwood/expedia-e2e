@@ -51,7 +51,7 @@ npm i
 npm start
 ```
 
-_(**to-do:** explain special npm "run" commands)_
+> _Learn more about special [npm "run" commands](https://docs.npmjs.com/cli/run-script)_
 
 You'll see the app spin up and print some info to the console:
 

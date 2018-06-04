@@ -92,7 +92,7 @@ cd exercise-2
 npm i --save-dev webdriverio
 ```
 
-_(**to-do:** explain `-D`)_
+> _Learn more about available aliases for [npm i](https://docs.npmjs.com/cli/install).  For example, `-D` is an alias for the `--save-dev` argument._
 
 ### Create your first test file
 
