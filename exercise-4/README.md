@@ -129,7 +129,7 @@ _Look Ma, no promises!_  We're simply using Node's built-in `assert` module, and
 3. Run it
 
 ```bash
-./node_modules/.bin/wdio
+npm test
 ```
 
 You should see the example spec run with 1 passing test, and the page title printed to the console:
