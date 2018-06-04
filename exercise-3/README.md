@@ -149,7 +149,7 @@ capabilities: [{
 // ...
 ```
 
-**(Keep this section?)** Since our first test spec _(example.spec.js)_ is still using promises, let's `sync` to `false` for now.
+Since our first test spec _(example.spec.js)_ is still using promises, let's `sync` to `false` for now.
 
 ```js
 // By default WebdriverIO commands are executed in a synchronous way using
@@ -163,7 +163,9 @@ sync: false,
 Create a new test spec file called `example.spec.js` in `exercise-3/tests/browser`, and paste this log statement:
 
 ```js
-console.log(browser);
+
+console.log('browser.desiredCapabilities', browser.desiredCapabilities);
+
 ```
 
 This where we will eventually see our tests execute, but for now this simply logs the [global `browser` object](http://webdriver.io/guide/testrunner/browserobject.html) so we know it's working.  It also gives us some insights into the global browser object in WebDriver.io.
