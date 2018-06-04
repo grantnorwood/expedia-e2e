@@ -74,7 +74,7 @@ sync: true,
 1. Change to the correct directory
 
 ```bash
-cd tests/browser/exercise-4
+cd exercise-4
 ```
 
 2. Install dependencies

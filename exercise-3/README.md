@@ -45,7 +45,7 @@ That being said, we'll use the WDIO test runner from this point forward!
 1. Change to the correct directory
 
 ```bash
-cd tests/browser/exercise-3
+cd exercise-3
 ```
 
 2. Install dependencies

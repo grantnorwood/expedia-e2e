@@ -36,7 +36,7 @@ WebDriver.io uses CSS-style selectors to access elements in the browser's DOM.  
 1. Change to the correct directory
 
 ```bash
-cd tests/browser/exercise-4
+cd exercise-5
 ```
 
 2. Install dependencies

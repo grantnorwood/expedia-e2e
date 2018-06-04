@@ -56,7 +56,7 @@ _Use the following questions to help choose which user paths and interactions sh
 1. Change to the correct directory
 
 ```bash
-cd tests/browser/exercise-4
+cd exercise-7
 ```
 
 2. Install dependencies

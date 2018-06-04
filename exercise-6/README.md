@@ -35,7 +35,7 @@ The [WebDriver.io Page Object Pattern](http://webdriver.io/guide/testrunner/page
 1. Change to the correct directory
 
 ```bash
-cd tests/browser/exercise-4
+cd exercise-6
 ```
 
 2. Install dependencies
