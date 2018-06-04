@@ -113,6 +113,13 @@ class HomePage {
 
 Now that the page elements are easy to access via our getter functions, we can begin to define functions to encapsulate interactions on the page, abstracting away the details so from your test specs.
 
+Examples of common actions you might write functions for include:
+
+- getting an element's text
+- clicking on an element
+- scrolling the page
+- _etc_
+
 ```js
 class HomePage {
 
