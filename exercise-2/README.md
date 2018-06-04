@@ -36,7 +36,9 @@ In order to run our first test, we'll need to start our example app server, inst
 
 ### Start the app server
 
-In your terminal, `cd` to the `verbo` directory, and start the app.  _In the future, we'll just assume this app is always running._
+In your terminal, `cd` to the `verbo` directory, and start the app.
+
+_**Note:** In the future, we'll just assume this app is always running._
 
 ```bash
 cd verbo
