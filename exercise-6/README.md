@@ -150,7 +150,7 @@ I've already created that initial test spec file as `tests/browser/specs/homepag
 1. Open the `Home.page.js` file in the `tests/browser/pages` directory, where the getter and action parts of the Page Object Pattern will be implemented. _(Look for the `TODO` comments.)_
 2. For each of the elements used in our `tests/browser/specs/homepage.spec.js` test, create a **getter** and an **action** in the `tests/browser/pages/Home.page.js` page object.
 
-_**Hint:** look for anywhere we've called `browser.element()` or `browser.elements()` to see which getters you'll need to create!_
+_**Hint:** look for anywhere we've called `browser.element()`, `browser.elements()`, `browser.getText()`, or other commands to see which elements you'll need to create getters for!_
 
 #### Solution
 
