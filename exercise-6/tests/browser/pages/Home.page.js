@@ -1,11 +1,10 @@
 'use strict';
 
 /**
-  * Pages generally contains three parts:
+  * Pages generally contain two parts:
   *
-  * 1. selectors
-  * 2. getters
-  * 3. actions
+  * 1. getters
+  * 2. actions
   *
   */
 class HomePage {
