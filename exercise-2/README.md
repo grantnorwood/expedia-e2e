@@ -100,7 +100,7 @@ _Our e2e tests using WebDriver are typically installed and run in the same NPM p
 
 ![project structure](https://content.screencast.com/users/gnorwood_homeaway/folders/Snagit/media/b2a1ebfd-7ded-45db-bffe-e3a142bd6426/2018-06-03_20-33-07.png)
 
-2. From the official [WebDriver docs](http://webdriver.io/guide.html), let's copy their example test code.  Create a new file called `example.spec.js` and copy the following into it:
+1. From the official [WebDriver docs](http://webdriver.io/guide.html), let's copy their example test code.  Create a new file in the `tests/browser` directory called `example.spec.js` and copy the following into it:
 
 ```js
 var webdriverio = require('webdriverio');
