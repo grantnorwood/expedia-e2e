@@ -191,9 +191,9 @@ For extra practice, let's add another inner `describe()` block within the outerm
 
 ```js
 describe('page h1', function () {
-    var expectedText = "Did you remember to pack your toothbrush?";
+    var expectedH1Text = "Did you remember to pack your toothbrush?";
 
-    it('should be "' + expectedPageTitle + '"', function () {
+    it('should be "' + expectedH1Text + '"', function () {
         // Navigate to the home page
         browser.url('/');
 
@@ -204,11 +204,11 @@ describe('page h1', function () {
         console.log('\n🤖 (Chai) The h1 text is: ' + h1Text);
 
         // Assert the page title is what we expect it to be
-        expect(h1Text).to.equal(expectedText);
+        expect(h1Text).to.equal(expectedH1Text);
 
         // HINT: Want to see what a failure looks like?  
         //       Uncomment the line below to try the `.not.to.equal()` syntax!
-        // expect(h1Text).not.to.equal(expectedText);
+        // expect(h1Text).not.to.equal(expectedH1Text);
 
         // HINT: You can also change the page title in `verbo/src/components/HomePage/HomePage.jsx` to simulate an actual bug in the code, which should also cause your test to fail.
     });
