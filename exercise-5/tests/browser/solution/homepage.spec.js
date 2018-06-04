@@ -68,7 +68,7 @@ describe('Homepage', function () {
         // });
 
         it('should render the correct count of travel alerts in the navbar badge', function () {
-            // Navigate to the home page
+            // Navigate to the home page (baseUrl is now defined above)
             browser.url('/');
 
             // getText() will return the count text from within the <span />, too

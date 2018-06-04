@@ -17,9 +17,12 @@ describe('Homepage', function () {
      */
     describe('Challenge 1: Navbar', function () {
         it('should render the correct app name', function () {
-            
+
             // TODO: Write a test to verify that the actual name of the app rendered in
             //       the '.navbar-brand' is the expected text "Verbo".
+            //
+            // HINT: Use the same browser.getText('.selector') command we previously used
+            //       (see http://webdriver.io/api/property/getText.html)
 
         });
 
@@ -27,6 +30,9 @@ describe('Homepage', function () {
 
             // TODO: Write a test to verify that the "My Profile" link exists in the navbar
             //       with the correct url, so that users always have access to the "/profile" url.
+            //
+            // HINT: Use the browser.getAttribute('.selector', 'attribute') command
+            //       (see http://webdriver.io/api/property/getAttribute.html)
 
         });
     });

@@ -49,8 +49,8 @@ npm i
 
 Write two tests in the stubbed out `it()` blocks in `homepage.spec.js`.
 
-- `it('should render the correct app name')`
-- `it('should render a "My Profile" link')`
+- `it('should render the correct app name')` - "Verbo", located in the top left of the navbar
+- `it('should render a "My Profile" link')` - "My Profile", located in the top right of the navbar
 
 Use the `browser` object and Chai's `expect()` function as we did in the previous exercises as a starting point.
 
@@ -93,7 +93,8 @@ _(See the [solution directory](tests/browser/solution) if you'd like to preview,
 
 ## What we learned
 
-_(to-do)_
+- [x] We practiced accessing different elements on the page with CSS-style selectors.
+- [x] We learned a bit more about other available [API commands](http://webdriver.io/api.html).
 
 ## Up next
 

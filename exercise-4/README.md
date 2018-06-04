@@ -197,20 +197,20 @@ describe('page h1', function () {
         // Navigate to the home page
         browser.url('/');
 
-        // Get the page title
+        // Get the h1 text
         var h1Text = browser.getText('h1');
 
-        // Log the page title (just for fun)
+        // Log the h1 text (just for fun)
         console.log('\n🤖 (Chai) The h1 text is: ' + h1Text);
 
-        // Assert the page title is what we expect it to be
+        // Assert the h1 text is what we expect it to be
         expect(h1Text).to.equal(expectedH1Text);
 
         // HINT: Want to see what a failure looks like?  
         //       Uncomment the line below to try the `.not.to.equal()` syntax!
         // expect(h1Text).not.to.equal(expectedH1Text);
 
-        // HINT: You can also change the page title in `verbo/src/components/HomePage/HomePage.jsx` to simulate an actual bug in the code, which should also cause your test to fail.
+        // HINT: You can also change the h1 text in `verbo/src/components/HomePage/HomePage.jsx` to simulate an actual bug in the code, which should also cause your test to fail.
     });
 });
 ```
@@ -230,7 +230,7 @@ npm test
 ## What we learned
 
 - [x] We learned how to use mocha syntax to group our tests with `describe()` and `it()` functions.
-- [x] We learned that setting `sync` mode to `true` allows us to write more simple, synchronous-looking code in our tests, and let WebDriver.io extract away the inherently async behavior of testing with web browsers.
+- [x] We learned that setting `sync` mode to `true` allows us to write more simple, synchronous-looking code in our tests, and let WebDriver.io abstract away the inherently async behavior of testing with web browsers.
 
 ## Up next
 
