@@ -17,6 +17,9 @@ describe('Nina Newcomer', function () {
      * http://webdriver.io/api.html
      */
     describe('Challenge 1: Save new profile info successfully', function () {
+
+        // TODO: Init page objects
+
         it('should allow a user to save updated profile info', function () {
             // Navigate to the home page
             browser.url('/');

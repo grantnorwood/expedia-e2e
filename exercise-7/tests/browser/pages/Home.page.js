@@ -79,4 +79,4 @@ class HomePage extends BasePage {
     }
 }
 
-module.exports = new HomePage();
+module.exports = HomePage;

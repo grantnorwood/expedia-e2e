@@ -4,8 +4,8 @@
 
 var expect = require('chai').expect;
 var config = require('../../../../wdio.conf').config;
-var homePage = require('../../pages/Home.page');
-var profilePage = require('../../pages/Profile.page');
+var HomePage = require('../../pages/Home.page');
+var ProfilePage = require('../../pages/Profile.page');
 
 /**
  * This group of tests are all related to Nina Newcomer's critical user paths.
@@ -15,6 +15,10 @@ var profilePage = require('../../pages/Profile.page');
  * - Add a new task
  */
 describe('Nina Newcomer', function () {
+
+    // Init page (or component) objects.
+    var homePage = new HomePage();
+    var profilePage = new ProfilePage();
 
     /**
      * Challenge 1 - Remember to utilize the WebDriver.io API docs and explore for the methods you will need!

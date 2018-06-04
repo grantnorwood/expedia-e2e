@@ -65,4 +65,4 @@ class HomePage {
     }
 }
 
-module.exports = new HomePage();
+module.exports = HomePage;

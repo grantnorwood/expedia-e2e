@@ -103,4 +103,4 @@ class ProfilePage extends BasePage {
     }
 }
 
-module.exports = new ProfilePage();
+module.exports = ProfilePage;
