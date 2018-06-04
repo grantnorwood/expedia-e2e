@@ -8,19 +8,6 @@
   *
   */
 class HomePage {
-    constructor() {
-        super();
-
-        // --------------------------------------------------------------
-        // Define element selectors.
-        // --------------------------------------------------------------
-
-        // TODO: Create an `object` called `this.selectors` to store CSS 
-        //       selectors for all elements on the homepage.
-
-    }
-
-
     // --------------------------------------------------------------
     // Define element getters.
     // --------------------------------------------------------------

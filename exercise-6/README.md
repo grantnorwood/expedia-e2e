@@ -118,7 +118,7 @@ Examples of common actions you might write functions for include:
 - getting an element's text
 - clicking on an element
 - scrolling the page
-- _etc_
+- _... and other trusted interactions within this page_
 
 ```js
 class HomePage {
