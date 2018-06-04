@@ -170,7 +170,7 @@ var options = {
 // ...
 ```
 
-3. Add another line to log the url to the console:
+3. After the `getTitle()` call, add another line to log the url to the console:
 
 ```js
 // getTitle() ...
@@ -180,7 +180,7 @@ var options = {
 // ...
 ```
 
-1. And for fun, let's use a standard CSS selector syntax to print out the page's `<h1 />` text:
+4. And for fun, let's use a standard CSS selector syntax to print out the page's `<h1 />` text:
 
 ```js
 // getTitle() ...
