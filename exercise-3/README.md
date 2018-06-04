@@ -186,11 +186,13 @@ Note that none of the tests are passing, because we haven't really created our n
 
 ### First passing test
 
+Next we're going to convert our previous test from example-2 to use `wdio`.
+
 Since `wdio` does much of the setup and teardown of tests, we can delete the `require()` and `options` lines, as well as calls to `.remote()`, `.init()`, and `.end()`.  Additionally, the global WebDriver client is a variable called `browser`, so we'll update that, too.
 
 And because the base url is defined in our configuration file, we can simply point to the root path.  So we'll go ahead and delete those obsolete lines, change `webdriverio` to `browser`, and update the `url`.  You'll also see that we've wrapped the `browser` code in Mocha's `describe()` and `it()` functions so that we see passing tests:
 
-1. Create a new `example.spec.js` with the following _(based on the previous exercise)_:
+1. Open the existing `tests/browser/example.spec.js` and replace it with the following code _(based on the previous exercise)_:
 
 ```js
 /**
