@@ -23,7 +23,7 @@ It was created using Facebook's [Create React App](https://github.com/facebook/c
 
 ## Success criteria
 
-- Our webserver should serve the example website (VeRBO)
+- Our webserver should serve the example website (Verbo)
 
 ## Instructions
 
@@ -65,7 +65,7 @@ You'll see the app spin up and print some info to the console:
 
 ## What we learned
 
-- [x] How to spin up our webserver to serve the example website (VeRBO)
+- [x] How to spin up our webserver to serve the example website (Verbo)
 
 ## Up next
 
