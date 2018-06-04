@@ -87,9 +87,7 @@ module.exports = new HomePage();
 
 ```
 
-_Let's walk through this a bit ..._
-
-We have each of the two parts of a Page Object - **getters** and **actions**.
+_Let's walk through this using each of the two parts of a Page Object - **getters** and **actions**._
 
 #### Getters
 
