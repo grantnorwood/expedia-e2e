@@ -34,7 +34,7 @@ In order to run our first test, we'll need to start our example app server, inst
 
 > So expect to have a few terminal windows (or tabs) open 🤓
 
-Notice that in the `exercise-2` folder, I've already scaffolded out an NPM project to save some time, along with an empty `src` folder to give you a better idea of how this might work within your own applications.  
+Take a look at the application in your code editor.  Notice that in the `exercise-2` folder, I've already scaffolded out an NPM project to save some time, along with an empty `src` folder to give you a better idea of how this might work within your own applications.  
 
 _Our e2e tests using WebDriver are typically installed and run in the same NPM project as our app when out in the wild._
 
@@ -75,6 +75,14 @@ You should see some output as the server starts, including a line telling you wh
 Visit your selenium server at [http://localhost:4444/](http://localhost:4444/) to make sure it's working.
 
 ![localhost on port 4444](https://content.screencast.com/users/gnorwood_homeaway/folders/Snagit/media/5a489917-b390-46a9-af3b-33325f00f116/2018-05-27_13-05-45.png)
+
+### Init the exercise
+
+1. Change to the correct directory
+
+```bash
+cd exercise-2
+```
 
 ### Install WebDriver.io via NPM
 
