@@ -133,6 +133,7 @@ _Note that `*.spec.js` is the standard file name format for executable test spec
 Let's see how we did ...
 
 ```bash
+cd tests/browser
 node example.spec.js
 ```
 
@@ -144,8 +145,6 @@ Title was: Google
 ```
 
 _Nice job, you've just created your first automated test!_
-
-_(**to-do:** explain each method on `webdriverio` object in example code)_
 
 ### Let's get fancier
 
