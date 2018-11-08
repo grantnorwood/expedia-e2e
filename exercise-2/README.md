@@ -59,8 +59,6 @@ npm i -g selenium-standalone
 selenium-standalone install --drivers.firefox.version=0.23.0
 ```
 
-&nbsp;
-
 <details>
 <summary>*TODO: Update code after selenium-standalone updates Gecko driver*</summary>
 <p>
@@ -74,6 +72,8 @@ selenium-standalone install
 </p>
 </details>
 
+&nbsp;
+
 The install command pulls down its own dependencies and makes it ready to be runnable.
 
 3. Starting the server is simple, and will run in that terminal tab until you stop it with `ctrl-c`.
@@ -81,8 +81,6 @@ The install command pulls down its own dependencies and makes it ready to be run
 ```bash
 selenium-standalone start --drivers.firefox.version=0.23.0
 ```
-
-&nbsp;
 
 <details>
 <summary>*TODO: Update code after selenium-standalone updates Gecko driver*</summary>
@@ -95,6 +93,8 @@ selenium-standalone start
 ```
 </p>
 </details>
+
+&nbsp;
 
 You should see some output as the server starts, including a line telling you which url & port the server is using:
 
