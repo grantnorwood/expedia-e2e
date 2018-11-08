@@ -74,7 +74,7 @@ selenium-standalone install
 
 &nbsp;
 
-The install command pulls down its own dependencies and makes it ready to be runnable.
+_The install command pulls down its own dependencies and makes it ready to be runnable._
 
 3. Starting the server is simple, and will run in that terminal tab until you stop it with `ctrl-c`.
 
@@ -96,7 +96,7 @@ selenium-standalone start
 
 &nbsp;
 
-You should see some output as the server starts, including a line telling you which url & port the server is using:
+_You should see some output as the server starts, including a line telling you which url & port the server is using:_
 
 ![Selenium standalone server & port](https://content.screencast.com/users/gnorwood_homeaway/folders/Snagit/media/2fd72177-4c14-453e-bfc7-c0c7b6f5ca8a/2018-05-28_01-04-39.png)
 
