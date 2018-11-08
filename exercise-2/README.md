@@ -54,6 +54,13 @@ _The app should be running on [http://localhost:3000](http://localhost:3000)._
 
 2. Install Selenium standalone server via NPM.  We're going to install it _globally_ so we don't have keep re-installing it for other exercises _(hence the `-g` argument)_.
 
+```bash
+npm i -g selenium-standalone
+selenium-standalone install --drivers.firefox.version=0.23.0
+```
+
+&nbsp;
+
 <details>
 <summary>*TODO: Update code after selenium-standalone updates Gecko driver*</summary>
 <p>
@@ -67,16 +74,15 @@ selenium-standalone install
 </p>
 </details>
 
-&nbsp;
-
-```bash
-npm i -g selenium-standalone
-selenium-standalone install --drivers.firefox.version=0.23.0
-```
-
 The install command pulls down its own dependencies and makes it ready to be runnable.
 
 3. Starting the server is simple, and will run in that terminal tab until you stop it with `ctrl-c`.
+
+```bash
+selenium-standalone start --drivers.firefox.version=0.23.0
+```
+
+&nbsp;
 
 <details>
 <summary>*TODO: Update code after selenium-standalone updates Gecko driver*</summary>
@@ -89,12 +95,6 @@ selenium-standalone start
 ```
 </p>
 </details>
-
-&nbsp;
-
-```bash
-selenium-standalone start --drivers.firefox.version=0.23.0
-```
 
 You should see some output as the server starts, including a line telling you which url & port the server is using:
 
