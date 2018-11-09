@@ -129,7 +129,7 @@ _Look Ma, no promises!_  We're simply using Node's built-in `assert` module, and
 3. Run it
 
 ```bash
-npm test
+npm run test:browser
 ```
 
 You should see the example spec run with 1 passing test, and the page title printed to the console:
@@ -218,7 +218,7 @@ describe('page h1', function () {
 Run your test script again, and you'll see another passing test!
 
 ```bash
-npm test
+npm run test:browser
 ```
 
 ![3 passing tests](https://content.screencast.com/users/gnorwood_homeaway/folders/Snagit/media/b2be255c-9dc5-4cae-aeac-32ba61c978a4/2018-05-28_02-53-52.png)

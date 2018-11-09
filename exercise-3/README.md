@@ -261,24 +261,22 @@ You can also try intentionally causing a test to fail to see what that looks lik
 
 ### Launch `wdio` with an `npm` script
 
-Let's add an `npm test` script so we can avoid calling `wdio` directly, and make it easier for other developers and build tools to run your e2e test suite.
+Let's add an `npm run [command]` script so we can avoid calling `wdio` directly, and make it easier for other developers and build tools to run your e2e test suite.
 
-You can call your script just about anything, but at HomeAway, we typically have a pattern where a variety of "sub-scripts" use the colons to group similar scripts _(`:`)_.
-
-Also, `npm run test` is more typically used to run unit tests.
+You can call your script just about anything, but at HomeAway, we typically have a pattern where a variety of "sub-scripts" use the colons to group similar scripts _(e.g., `npm run test:browser`)_.  Note that the `npm run test` command is more typically used to run unit tests.
 
 1. Open `package.json`
-2. Notice the new `scripts` field:
+2. Notice the `scripts` field:
 
 ```js
 "scripts": {
-    "test": "wdio"
+    "test:browser": "wdio"
 },
 ```
 
-3. Now, simply run `npm test` from now on to run your suite of tests.  Notice the `> wdio` in the output:
+3. Now, simply run `npm run test:browser` from now on to run your suite of tests.  Notice the `> wdio` in the output:
 
-![Running npm test](https://content.screencast.com/users/gnorwood_homeaway/folders/Snagit/media/2bc13607-f9c7-4af4-aeb2-45b1d8ccb1ff/2018-05-28_02-11-34.png)
+![Running npm run test:browser](https://content.screencast.com/users/gnorwood_homeaway/folders/Snagit/media/acd76ce6-ef0e-450f-a0d7-0eae5f8fdc20/2018-11-09_15-13-34.png)
 
 **Pro tip:** Another benefit to using `npm` scripts is that they already search `node_modules/.bin` for local executables, so we can simple execute `wdio` without the rest of the path.
 
@@ -291,7 +289,7 @@ Also, `npm run test` is more typically used to run unit tests.
 - [x] You should now understand the difference between the standalone mode and using the WDIO test runner, and why WDIO is preferred.
 - [x] You can now run `wdio` tests, using the configuration file you created.
 - [x] You wrote your first simple test spec!
-- [x] We created an `npm test` script that will make running `wdio` easier in the future.
+- [x] We created an `npm run test:browser` script that will make running `wdio` easier in the future.
 
 ## Up next
 
