@@ -89,7 +89,7 @@ The `wdio` command can help us setup our initial configuration file by walking u
 ./node_modules/.bin/wdio
 ```
 
-_**Note:** You'll accept the defaults on many of the questions by simply pressing the `enter` key_
+_**Note:** See the screen shots below.  You'll accept the defaults on many of the questions by simply pressing the `enter` key._
 
 2. When asked where your test specs should be located, let's choose a slightly different path that is more selective about the test spec file globs.
 
@@ -123,21 +123,46 @@ And you'll see the new `devDependencies` which were automatically added to your 
 
 ```js
 "devDependencies": {
-    "wdio-dot-reporter": "0.0.9",
-    "wdio-mocha-framework": "^0.5.13",
-    "wdio-selenium-standalone-service": "0.0.10",
-    "webdriverio": "^4.12.0"
-  }
+  "wdio-dot-reporter": "0.0.10",
+  "wdio-mocha-framework": "^0.6.4",
+  "wdio-selenium-standalone-service": "0.0.10",
+  "webdriverio": "^4.14.0"
+}
 ```
 
 ### Customizing the configuration
 
-As we did in the previous exercise, let's change the `browserName` default from `firefox` to `chrome`.
+1. First, let's make sure the correct test files are running.  We'll exclude the solution test file by adding the appropriate path to the `exclude` property:
+
+```js
+specs: [
+    './tests/browser/**/*.spec.js'
+],
+// Patterns to exclude.
+exclude: [
+    './tests/browser/solution/**/*.spec.js'
+],
+```
+
+_**Note:** If you have problems getting your tests to run in any of the exercises, or simply want to skip ahead, you can change the `specs` path to only run the solution files, as shown below:_
+
+```js
+// Only run the solution test files 
+specs: [
+    // './tests/browser/**/*.spec.js'
+    './tests/browser/solution/**/*.spec.js'
+],
+exclude: [
+    // './tests/browser/solution/**/*.spec.js'
+],
+// ...
+```
+
+2. As we did in the previous exercise, let's change the `browserName` default from `firefox` to `chrome`.
 
 Look for the `capabilities` object in your `wdio.conf.js` file:
 
 ```js
-// ...
 capabilities: [{
     // maxInstances can get overwritten per capability. So if you have an in-house Selenium
     // grid with only 5 firefox instances available you can make sure that not more than
@@ -146,10 +171,9 @@ capabilities: [{
     //
     browserName: 'chrome'
 }],
-// ...
 ```
 
-Since our first test spec _(example.spec.js)_ is still using promises, let's `sync` to `false` for now.
+3. Since our first test spec _(example.spec.js)_ is still using promises, let's `sync` to `false` for now.
 
 ```js
 // By default WebdriverIO commands are executed in a synchronous way using
