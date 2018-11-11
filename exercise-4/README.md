@@ -45,7 +45,7 @@ npm i
 
 ### Switch to sync mode
 
-Back when we first created our `wdio.conf.js` file, we set `sync` mode to `false` so we could reuse some of our first test code.  It returned a promise with a `.then()` which called `assert()` to validate the test.
+Back when we first created our `wdio.conf.js` file, we set `sync` mode to `false` so we could reuse some of our test code from previous exercises.  It returned a promise with a `.then()` which called `assert()` to validate the test.
 
 However, WebDriver.io can do a cool trick where we enable `sync` mode to `true`, and it will handle a lot of the _asynchronous_ nature of browser testing for us, and allow us to write more readable code that looks more _synchronous_.
 
@@ -73,14 +73,12 @@ describe('webdriver.io page', function() {
 
 ### Enable `sync` mode
 
-_Because it makes everything appear cleaner and more readable!_
+_It makes your code cleaner and more readable!_
 
-1. In `wdio.conf.js`, change `sync` back to `true`:
+1. In `wdio.conf.js`, ensure that `sync` is set back to `true` _(the WebDriver default)_:
 
 ```js
-// ...
 sync: true,
-// ...
 ```
 
 ### Using Mocha
@@ -222,6 +220,10 @@ npm run test:browser
 ```
 
 ![3 passing tests](https://content.screencast.com/users/gnorwood_homeaway/folders/Snagit/media/b2be255c-9dc5-4cae-aeac-32ba61c978a4/2018-05-28_02-53-52.png)
+
+_If you run the test suite multiple times in succession, you're bound to notice that your tests are running asynchronously and in parallel_  🤓
+
+![Tests are asynchrous and run in parallel](https://content.screencast.com/users/gnorwood_homeaway/folders/Snagit/media/5587e755-13d2-4b54-b8a9-f173902a32c1/2018-11-10_19-12-22.png)
 
 ✅ You've made a lot of progress, great job!
 

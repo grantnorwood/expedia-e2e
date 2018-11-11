@@ -155,7 +155,6 @@ specs: [
 exclude: [
     // './tests/browser/solution/**/*.spec.js'
 ],
-// ...
 ```
 
 2. As we did in the previous exercise, let's change the `browserName` default from `firefox` to `chrome`.

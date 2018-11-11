@@ -194,19 +194,16 @@ var options = {
 2. Change the url to our local application:
 
 ```js
-// ...
 .url('http://localhost:3000')
-// ...
 ```
 
-3. After the `getTitle()` call, add another line to log the url to the console:
+1. After the `getTitle()` call, add another line to log the url to the console:
 
 ```js
 // getTitle() ...
 .getUrl().then(function (url) { // gets the page url, and executes a callback fn in .then()
     console.log('Url was: ' + url);
 })
-// ...
 ```
 
 4. And for fun, let's use a standard CSS selector syntax to print out the page's `<h1 />` text:
@@ -217,7 +214,6 @@ var options = {
 .getText('h1').then(function (text) { // gets the page's h1 element text
     console.log('h1 was: ' + text);
 })
-// ...
 ```
 
 5. Run the test again, and this time we should see it open up Chrome instead, as well as some new lines in the console output.

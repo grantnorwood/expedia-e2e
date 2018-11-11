@@ -96,15 +96,11 @@ We'll use this syntax to encapsulate calls to `browser.element()` and `browser.e
 ```js
 class HomePage {
 
-    // ...
-
     // --------------------------------------------------------------
     // Define element getters.
     // --------------------------------------------------------------
 
     get jumbotronPrimaryButton() { return browser.element('.jumbotron .btn-primary'); }
-
-    // ...
 
 }
 ```
@@ -123,8 +119,6 @@ Examples of common actions you might write functions for include:
 ```js
 class HomePage {
 
-    // ...
-
     // --------------------------------------------------------------
     // Define trusted interactions with elements.
     // --------------------------------------------------------------
@@ -135,8 +129,6 @@ class HomePage {
     getJumbotronPrimaryButtonText() {
         this.jumbotronPrimaryButton.getText();
     }
-
-    // ...
 
 }
 ```
