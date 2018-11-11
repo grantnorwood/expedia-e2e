@@ -89,6 +89,26 @@ _(See the [solution directory](tests/browser/solution) if you'd like to preview,
 
 ✅ Those are two simple challenges, but e2e testing in the real world is gonna be a lot tougher!
 
+### Try out another reporter
+
+The `wdio` package which generated our initial `wdio.conf.js` file gave us a number of options, and we simply chose the default `dot` reporter.
+
+Since we're using the Mocha spec runner, let's try switching to the `spec` reporter which formats the output nicely using our test suite's `describe()` and `it()` code blocks.  Instead of using the config file generator, we'll follow the WebDriver docs for installation.
+
+_From http://webdriver.io/guide/reporters/spec.html for installation instructions:_
+
+1. Install the `wdio-spec-reporter` dependency
+
+```bash
+npm install wdio-spec-reporter --save-dev
+```
+
+2. Update the `reporters` property in `wdio.conf.js` to `spec`:
+
+```js
+reporters: ['spec'],
+```
+
 ---
 
 ## What we learned
