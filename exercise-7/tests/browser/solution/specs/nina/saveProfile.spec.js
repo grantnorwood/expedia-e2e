@@ -3,7 +3,7 @@
 */
 
 var expect = require('chai').expect;
-var config = require('../../../../wdio.conf').config;
+var config = require('../../../../../wdio.conf').config;
 var HomePage = require('../../pages/Home.page');
 var ProfilePage = require('../../pages/Profile.page');
 
@@ -21,10 +21,15 @@ describe('Nina Newcomer', function () {
     var profilePage = new ProfilePage();
 
     /**
-     * Challenge 1 - Remember to utilize the WebDriver.io API docs and explore for the methods you will need!
-     * http://webdriver.io/api.html
+     * Ensure that Nina can save her profile successfully.
+     *
+     * Nina will:
+     *  - Load the home page
+     *  - Click the "My Profile" link
+     *  - Update her profile with new values
+     *  - Click the Save button
      */
-    describe('Challenge 1: Save new profile info successfully', function () {
+    describe('Save new profile info successfully', function () {
         it('should allow a user to save updated profile info', function () {
             // Navigate to the home page
             browser.url('/');
@@ -55,31 +60,14 @@ describe('Nina Newcomer', function () {
             // Click the Save button.
             profilePage.clickSaveButton();
 
-            // Verify the new values were persisted
-            var expectedProfile = {
-                firstName: newFirstName,
-                lastName: newLastName,
-                email: newEmail,
-                bio: newBio,
-            };
-
-            expect(profilePage.getFirstNameInputValue()).to.be.equal(expectedProfile.firstName);
-            expect(profilePage.getLastNameInputValue()).to.be.equal(expectedProfile.lastName);
-            expect(profilePage.getEmailInputValue()).to.be.equal(expectedProfile.email);
-            expect(profilePage.getBioTextareaValue()).to.be.equal(expectedProfile.bio);
+            // Assert that the visible fields have been updated successfully.
+            expect(profilePage.getFirstNameInputValue()).to.be.equal(newFirstName);
+            expect(profilePage.getLastNameInputValue()).to.be.equal(newLastName);
+            expect(profilePage.getEmailInputValue()).to.be.equal(newEmail);
+            expect(profilePage.getBioTextareaValue()).to.be.equal(newBio);
 
             // Assert the success message is visible.
             expect(profilePage.isSuccessAlertVisible()).to.be.equal(true);
-
-            // NOTE: You can debug the automated browser session by using `browser.debug()`!
-            //       This requires some much longer timeouts in wdio.config.js, however I've
-            //       already increased those timeouts for you  :)
-            //
-            //       http://webdriver.io/api/utility/debug.html
-            //
-            //       Just uncomment the line below, and you're free to explore the Chrome devtools 
-            //       within the automated session!
-            // browser.debug();
         });
     });
 });
