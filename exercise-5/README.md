@@ -11,6 +11,7 @@ In order to become more familiar with the extensive list of WebDriver.io command
   - [Init the exercise](#init-the-exercise)
   - [💪 Challenge 1: The navbar](#💪-challenge-1-the-navbar)
   - [💪 Challenge 2: Travel alerts](#💪-challenge-2-travel-alerts)
+  - [Try out another reporter](#try-out-another-reporter)
 - [What we learned](#what-we-learned)
 - [Up next](#up-next)
 
