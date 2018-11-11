@@ -88,7 +88,7 @@ class ProfilePage extends Component {
         return (
             <div>
                 <PageHeader>
-                    {'Nina\'s Profile'}
+                    {`${this.state.profile.firstName}'s Profile`}
                 </PageHeader>
                 <Form horizontal onSubmit={this.onFormSubmit}>
                     <FormGroup controlId="firstName">
