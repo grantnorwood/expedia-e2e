@@ -89,3 +89,4 @@ _Let's go!_
 - [Exercise 5: Practice with selectors and commands](exercise-5)
 - [Exercise 6: The Page Object Pattern](exercise-6)
 - [Exercise 7: Personas and paths](exercise-7)
+- [Exercise 8: Level up](exercise-8)

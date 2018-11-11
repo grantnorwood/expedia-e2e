@@ -121,11 +121,13 @@ Referencing the structure above, let's define the `persona.json` for Nina.
 
 _The `pages` and `specs` folders have already been created for us!_
 
-### Save profile info successfully
+### Test: Save profile info successfully
 
 Referencing the structure above, let's define the test spec for saving a profile.  This time, let's save some time and just paste the code you'll need into a new file.
 
-1. Create a new `specs/saveProfile.spec.js` file and paste the following:
+1. Create a new `specs/profile` folder within `tests/browser`
+
+2. Create a new `specs/saveProfile.spec.js` file and paste the following:
 
 ```js
 var expect = require('chai').expect;
@@ -205,15 +207,15 @@ describe('Nina Newcomer', function () {
 
 ![1 passing test with sync mode on](https://content.screencast.com/users/gnorwood_homeaway/folders/Snagit/media/b25ae61f-bb45-4cbb-a2ee-91cc188a52f1/2018-11-10_23-55-20.png)
 
-### 💪 Challenge 1: Create a new trip
+### 💪 Challenge 1: Write a "Create a new trip" test
 
-_To save time, you may want to copy/pasta the `saveProfile.spec.js` code as a starting point._
+> _To save time, you may want to copy/pasta the `saveProfile.spec.js` code as a starting point._
 
 Create a new `createNewTrip.spec.js` test file where Nina adds a new trip, and verify the UI displays a success message.
 
 _(todo: write the solution file)_
 
-### 💪 Challenge 2: Create a new task
+### 💪 Challenge 2: Write a "Create a new task" test
 
 Create a new `createNewTask.spec.js` test file where Nina adds a new task, and verify the UI displays a success message.
 
@@ -223,7 +225,7 @@ _(todo: write the solution file)_
 
 ## What we learned
 
-✅ You should now have a good understanding of how to structure your test suite in a way that makes it easier to focus on testing the most critical paths for both your users and your business 💵.
+✅ You should now have a good understanding of how to structure your test suite in a way that makes it easier to focus on testing the most critical paths for both your users and your business 💵
 
 ## Up next
 
