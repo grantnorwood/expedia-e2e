@@ -1,6 +1,6 @@
 # End-to-End Testing Workshop
 
-End-to-end automated testing with real web browsers is one of the the most effective methods of ensuring that our product works for the people who rely on us to list their short term rentals. 
+End-to-end automated testing with real web browsers is one of the the most effective methods of ensuring that our product works for the people who rely on us to list their short term rentals.
 
 Using WebDriver.io and other great technologies, this workshop will help us to build more confidence in the code we release, improve the experience for users, and ensure that the most critical app paths are protected. We want our customers to achieve their goals, and to protect and improve our company's revenue streams.
 

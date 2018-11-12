@@ -31,22 +31,15 @@ These instructions are based heavily on the official [WebDriver.io docs](http://
 
 ## Instructions
 
-In order to run our first test, we'll need to start our example app server, install WebDriver.io as a dependency for our e2e test code, and install a standalone Selenium server. _(Luckily, we'll see an [npm package](https://www.npmjs.com/package/selenium-standalone) which makes this quite simple!)_
+In order to run our first test, we'll make sure our example app server is running, install WebDriver.io as a dependency for our e2e test code, and install a standalone Selenium server. _(Luckily, we'll see an [npm package](https://www.npmjs.com/package/selenium-standalone) which makes this quite simple!)_
 
 > So expect to have a few terminal windows (or tabs) open 🤓
 
 ### Start the app server
 
-In your terminal, `cd` to the `verbo` directory, and start the app.
+Make sure the app server from [exercise-1](../exercise-1) is running on [http://localhost:3000](http://localhost:3000).
 
 _**Note:** In the future, we'll just assume this app is always running._
-
-```bash
-cd verbo
-npm start
-```
-
-_The app should be running on [http://localhost:3000](http://localhost:3000)._
 
 ### Install the selenium-standalone server
 
@@ -59,11 +52,13 @@ npm i -g selenium-standalone
 selenium-standalone install --drivers.firefox.version=0.23.0
 ```
 
+&nbsp;
+
 <details>
-<summary>*TODO: Update code after selenium-standalone updates Gecko driver*</summary>
+<summary><small><strong>TODO:</strong> Update code after selenium-standalone updates Gecko driver</small></summary>
 <p>
 
-Once the selenium-standalone package is finally updated to use the [latest Gecko driver](https://github.com/vvo/selenium-standalone/issues/409), the code below should work again without specifying the exact driver version.
+<em>Once the selenium-standalone package is finally updated to use the [latest Gecko driver](https://github.com/vvo/selenium-standalone/issues/409), the code below should work again without specifying the exact driver version.</em>
 
 ```bash
 npm i -g selenium-standalone
@@ -82,11 +77,13 @@ _The install command pulls down its own dependencies and makes it ready to be ru
 selenium-standalone start --drivers.firefox.version=0.23.0
 ```
 
+&nbsp;
+
 <details>
-<summary>*TODO: Update code after selenium-standalone updates Gecko driver*</summary>
+<summary><small><strong>TODO:</strong> Update code after selenium-standalone updates Gecko driver</small></summary>
 <p>
 
-Once the selenium-standalone package is finally updated to use the [latest Gecko driver](https://github.com/vvo/selenium-standalone/issues/409), the code below should work again without specifying the exact driver version.
+<em>Once the selenium-standalone package is finally updated to use the [latest Gecko driver](https://github.com/vvo/selenium-standalone/issues/409), the code below should work again without specifying the exact driver version.</em>
 
 ```bash
 selenium-standalone start
@@ -106,7 +103,8 @@ Visit your selenium server at [http://localhost:4444/](http://localhost:4444/) t
 
 ### Init the exercise
 
-1. Change to the correct directory
+1. Open a new tab where we'll run test commands
+2. Change to the correct directory
 
 ```bash
 cd exercise-2
@@ -197,7 +195,7 @@ var options = {
 .url('http://localhost:3000')
 ```
 
-1. After the `getTitle()` call, add another line to log the url to the console:
+3. After the `getTitle()` call, add another line to log the url to the console:
 
 ```js
 // getTitle() ...
