@@ -2,7 +2,7 @@
 
 Now, let's install WebDriver.io and the [standalone Selenium server]((https://www.npmjs.com/package/selenium-standalone)).  We'll need both in order to run our e2e test specs.
 
-These instructions are based heavily on the official [WebDriver.io docs](https://v4.webdriver.io/guide.html), which are really well done.  Get used to using them!
+These instructions are based heavily on the official [WebDriver.io docs](http://v4.webdriver.io/guide.html), which are really well done.  Get used to using them!
 
 **Overview**
 
@@ -128,7 +128,7 @@ _Our e2e tests using WebDriver are typically installed and run in the same NPM p
 
 ![project structure](https://content.screencast.com/users/gnorwood_homeaway/folders/Snagit/media/b2a1ebfd-7ded-45db-bffe-e3a142bd6426/2018-06-03_20-33-07.png)
 
-2. From the official [WebDriver docs](https://v4.webdriver.io/guide.html), let's copy their example test code.  Create a new file in the `tests/browser` directory called `example.spec.js` and copy the following into it:
+2. From the official [WebDriver docs](http://v4.webdriver.io/guide.html), let's copy their example test code.  Create a new file in the `tests/browser` directory called `example.spec.js` and copy the following into it:
 
 ```js
 var webdriverio = require('webdriverio');
@@ -151,7 +151,7 @@ webdriverio
     });
 ```
 
-_Note that `*.spec.js` is the standard file name format for executable test specs.  [Learn more](https://v4.webdriver.io/guide/testrunner/organizesuite.html#Group-Test-Specs)_
+_Note that `*.spec.js` is the standard file name format for executable test specs.  [Learn more](http://v4.webdriver.io/guide/testrunner/organizesuite.html#Group-Test-Specs)_
 
 3. Save the file.
 

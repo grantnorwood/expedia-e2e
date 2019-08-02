@@ -14,7 +14,7 @@ describe('Nina Newcomer', function () {
 
     /**
      * Challenge 1 - Remember to utilize the WebDriver.io API docs and explore for the methods you will need!
-     * https://v4.webdriver.io/api.html
+     * http://v4.webdriver.io/api.html
      */
     describe('Challenge 1: Save new profile info successfully', function () {
 

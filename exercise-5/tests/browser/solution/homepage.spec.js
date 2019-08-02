@@ -77,7 +77,7 @@ describe('Homepage', function () {
             var expectedLinkUrl = baseUrl + '/travel-alerts';
 
             // Get the element and cache it.  Now the selector is only in one place for this test block.
-            // (See https://v4.webdriver.io/api/protocol/element.html)
+            // (See http://v4.webdriver.io/api/protocol/element.html)
             var navItem = browser.element('.navbar-nav > li > a[href="/travel-alerts"]');
 
             // Function calls still make multiple HTTP calls, but the code is easier to read.
@@ -98,7 +98,7 @@ describe('Homepage', function () {
             browser.url('/');
 
             // Notice we're using `browser.elements()` plural!  This is how we return an array of matching elements.
-            // (See https://v4.webdriver.io/api/protocol/elements.html)
+            // (See http://v4.webdriver.io/api/protocol/elements.html)
             var listItems = browser.elements('.travel-alerts-list > .list-group > .list-group-item');
             var listItemCount = listItems.value.length || 0;
 

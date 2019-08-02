@@ -1,9 +1,9 @@
 # Exercise 3: Using the `wdio` test runner
 
-There are two methods of running your WebDriver.io tests, and they are well documented in the official docs called "[Standalone vs WDIO](https://v4.webdriver.io/guide/getstarted/modes.html)".  Standalone mode is fine for first demos, or building your own entire framework, but **using WDIO is the preferred method of running e2e tests at scale.**
+There are two methods of running your WebDriver.io tests, and they are well documented in the official docs called "[Standalone vs WDIO](http://v4.webdriver.io/guide/getstarted/modes.html)".  Standalone mode is fine for first demos, or building your own entire framework, but **using WDIO is the preferred method of running e2e tests at scale.**
 
 > The WDIO Testrunner
-> [https://v4.webdriver.io/guide/getstarted/modes.html#The-WDIO-Testrunner](https://v4.webdriver.io/guide/getstarted/modes.html#The-WDIO-Testrunner)
+> [http://v4.webdriver.io/guide/getstarted/modes.html#The-WDIO-Testrunner](http://v4.webdriver.io/guide/getstarted/modes.html#The-WDIO-Testrunner)
 >
 > "The main purpose of WebdriverIO though is end to end testing on big scale. We therefore implemented a test runner that helps you to build a reliable test suite that is easy to read and maintain. The test runner takes care of many problems you are usually facing when working with plain automation libraries.
 >
@@ -191,7 +191,7 @@ console.log('browser.desiredCapabilities', browser.desiredCapabilities);
 
 ```
 
-This where we will eventually see our tests execute, but for now this simply logs the [global `browser` object](https://v4.webdriver.io/guide/testrunner/browserobject.html) so we know it's working.  It also gives us some insights into the global browser object in WebDriver.io.
+This where we will eventually see our tests execute, but for now this simply logs the [global `browser` object](http://v4.webdriver.io/guide/testrunner/browserobject.html) so we know it's working.  It also gives us some insights into the global browser object in WebDriver.io.
 
 ### Running `wdio`
 

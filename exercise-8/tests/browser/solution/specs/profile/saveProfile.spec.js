@@ -22,7 +22,7 @@ describe('Nina Newcomer', function () {
 
     /**
      * Challenge 1 - Remember to utilize the WebDriver.io API docs and explore for the methods you will need!
-     * https://v4.webdriver.io/api.html
+     * http://v4.webdriver.io/api.html
      */
     describe('Save new profile info successfully', function () {
         it('should allow a user to save updated profile info', function () {
@@ -75,7 +75,7 @@ describe('Nina Newcomer', function () {
             //       This requires some much longer timeouts in wdio.config.js, however I've
             //       already increased those timeouts for you  :)
             //
-            //       https://v4.webdriver.io/api/utility/debug.html
+            //       http://v4.webdriver.io/api/utility/debug.html
             //
             //       Just uncomment the line below, and you're free to explore the Chrome devtools 
             //       within the automated session!

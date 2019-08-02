@@ -30,7 +30,7 @@ For simplicity, I've already copied the solution from the previous exercise into
 
 We'll use **selectors** to interact with browser elements.
 
-WebDriver.io uses CSS-style selectors to access elements in the browser's DOM.  [Learn more about selectors](https://v4.webdriver.io/guide/usage/selectors.html)
+WebDriver.io uses CSS-style selectors to access elements in the browser's DOM.  [Learn more about selectors](http://v4.webdriver.io/guide/usage/selectors.html)
 
 ### Init the exercise
 
@@ -96,7 +96,7 @@ The `wdio` package which generated our initial `wdio.conf.js` file gave us a num
 
 Since we're using the Mocha spec runner, let's try switching to the `spec` reporter which formats the output nicely using our test suite's `describe()` and `it()` code blocks.  Instead of using the config file generator, we'll follow the WebDriver docs for installation.
 
-_From https://v4.webdriver.io/guide/reporters/spec.html for installation instructions:_
+_From http://v4.webdriver.io/guide/reporters/spec.html for installation instructions:_
 
 1. Install the `wdio-spec-reporter` dependency
 
@@ -115,7 +115,7 @@ reporters: ['spec'],
 ## What we learned
 
 - [x] We practiced accessing different elements on the page with CSS-style selectors.
-- [x] We learned a bit more about other available [API commands](https://v4.webdriver.io/api.html).
+- [x] We learned a bit more about other available [API commands](http://v4.webdriver.io/api.html).
 
 ## Up next
 

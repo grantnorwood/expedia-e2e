@@ -97,7 +97,7 @@ describe('Homepage', function () {
             browser.url('/');
 
             // Notice we're using `browser.elements()` plural!  This is how we return an array of matching elements.
-            // (See https://v4.webdriver.io/api/protocol/elements.html)
+            // (See http://v4.webdriver.io/api/protocol/elements.html)
             var listItemCount = homePage.getTravelAlertsListItemsCount();
 
             // Log it to the console (just for fun)

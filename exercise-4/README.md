@@ -49,7 +49,7 @@ Back when we first created our `wdio.conf.js` file, we set `sync` mode to `false
 
 However, WebDriver.io can do a cool trick where we enable `sync` mode to `true`, and it will handle a lot of the _asynchronous_ nature of browser testing for us, and allow us to write more readable code that looks more _synchronous_.
 
-You can read more about it in the official documentation, [It's all synchronous](https://v4.webdriver.io/guide/getstarted/v4.html#It%E2%80%99s-all-synchronous).
+You can read more about it in the official documentation, [It's all synchronous](http://v4.webdriver.io/guide/getstarted/v4.html#It%E2%80%99s-all-synchronous).
 
 _An example from the WebDriver.io docs of code that looks more synchronous, without any promises:_
 
