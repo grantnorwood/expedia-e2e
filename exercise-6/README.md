@@ -1,6 +1,6 @@
 # Exercise 6: The Page Object Pattern
 
-The [WebDriver.io Page Object Pattern](http://webdriver.io/guide/testrunner/pageobjects.html) documentation is fantastic, and it wouldn't hurt to read it over a few times to make sure you really understand the principles.
+The [WebDriver.io Page Object Pattern](https://v4.webdriver.io/guide/testrunner/pageobjects.html) documentation is fantastic, and it wouldn't hurt to read it over a few times to make sure you really understand the principles.
 
 > "The goal behind page objects is to abstract any page information away from the actual tests.
 > 

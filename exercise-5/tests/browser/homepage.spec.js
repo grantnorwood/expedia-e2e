@@ -1,8 +1,8 @@
 /**
 * Challenge: Write some additional helpful tests using the official WebDriver docs for selectors and the `browser` API.
 *
-* - Selectors: http://webdriver.io/guide/usage/selectors.html
-* - API: http://webdriver.io/api.html
+* - Selectors: https://v4.webdriver.io/guide/usage/selectors.html
+* - API: https://v4.webdriver.io/api.html
 */
 
 var expect = require('chai').expect;
@@ -22,7 +22,7 @@ describe('Homepage', function () {
             //       the '.navbar-brand' is the expected text "Verbo".
             //
             // HINT: Use the same browser.getText('.selector') command we previously used
-            //       (see http://webdriver.io/api/property/getText.html)
+            //       (see https://v4.webdriver.io/api/property/getText.html)
 
         });
 
@@ -32,7 +32,7 @@ describe('Homepage', function () {
             //       with the correct url, so that users always have access to the "/profile" url.
             //
             // HINT: Use the browser.getAttribute('.selector', 'attribute') command
-            //       (see http://webdriver.io/api/property/getAttribute.html)
+            //       (see https://v4.webdriver.io/api/property/getAttribute.html)
 
         });
     });

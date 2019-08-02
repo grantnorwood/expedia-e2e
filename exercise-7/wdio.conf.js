@@ -119,7 +119,7 @@ exports.config = {
     //
     // Framework you want to run your specs with.
     // The following are supported: Mocha, Jasmine, and Cucumber
-    // see also: http://webdriver.io/guide/testrunner/frameworks.html
+    // see also: https://v4.webdriver.io/guide/testrunner/frameworks.html
     //
     // Make sure you have the wdio adapter package for the specific framework installed
     // before running any tests.
@@ -127,7 +127,7 @@ exports.config = {
     //
     // Test reporter for stdout.
     // The only one supported by default is 'dot'
-    // see also: http://webdriver.io/guide/reporters/dot.html
+    // see also: https://v4.webdriver.io/guide/reporters/dot.html
     reporters: ['spec'],
     
     //

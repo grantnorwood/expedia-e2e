@@ -6,6 +6,10 @@ Using WebDriver.io and other great technologies, this workshop will help us to b
 
 _This workshop was first given at Expedia Group's UI Developer Conference in London, June 2018._
 
+> ⚠️ _This material was developed using WebDriver v4, the latest and greatest at the time, and all links point to the correct version of their docs._
+>
+> _However, **[WebDriver v5 was released](https://webdriver.io/blog/2018/12/19/webdriverio-v5-released.html) in Dec 2018**, so please be sure to use the [latest](https://webdriver.io/) version of WebDriver in your new projects!_
+
 <!-- TOC -->
 
 - [Required pre-work](#required-pre-work)
